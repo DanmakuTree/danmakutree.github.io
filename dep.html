@@ -1,0 +1,1045 @@
+<html lang="en" style="--vscode-font-family:&quot;Segoe WPC&quot;, &quot;Segoe UI&quot;, sans-serif; --vscode-font-weight:normal; --vscode-font-size:13px; --vscode-editor-font-family:Consolas, &quot;Courier New&quot;, monospace; --vscode-editor-font-weight:normal; --vscode-editor-font-size:14px; --vscode-foreground:#cccccc; --vscode-errorForeground:#f48771; --vscode-descriptionForeground:rgba(204, 204, 204, 0.7); --vscode-icon-foreground:#c5c5c5; --vscode-focusBorder:#007fd4; --vscode-textSeparator-foreground:rgba(255, 255, 255, 0.18); --vscode-textLink-foreground:#3794ff; --vscode-textLink-activeForeground:#3794ff; --vscode-textPreformat-foreground:#d7ba7d; --vscode-textBlockQuote-background:rgba(127, 127, 127, 0.1); --vscode-textBlockQuote-border:rgba(0, 122, 204, 0.5); --vscode-textCodeBlock-background:rgba(10, 10, 10, 0.4); --vscode-widget-shadow:#000000; --vscode-input-background:#3c3c3c; --vscode-input-foreground:#cccccc; --vscode-inputOption-activeBorder:rgba(0, 122, 204, 0); --vscode-inputOption-activeBackground:rgba(0, 127, 212, 0.4); --vscode-inputOption-activeForeground:#ffffff; --vscode-input-placeholderForeground:#a6a6a6; --vscode-inputValidation-infoBackground:#063b49; --vscode-inputValidation-infoBorder:#007acc; --vscode-inputValidation-warningBackground:#352a05; --vscode-inputValidation-warningBorder:#b89500; --vscode-inputValidation-errorBackground:#5a1d1d; --vscode-inputValidation-errorBorder:#be1100; --vscode-dropdown-background:#3c3c3c; --vscode-dropdown-foreground:#f0f0f0; --vscode-dropdown-border:#3c3c3c; --vscode-checkbox-background:#3c3c3c; --vscode-checkbox-foreground:#f0f0f0; --vscode-checkbox-border:#3c3c3c; --vscode-button-foreground:#ffffff; --vscode-button-background:#0e639c; --vscode-button-hoverBackground:#1177bb; --vscode-button-secondaryForeground:#ffffff; --vscode-button-secondaryBackground:#3a3d41; --vscode-button-secondaryHoverBackground:#45494e; --vscode-badge-background:#4d4d4d; --vscode-badge-foreground:#ffffff; --vscode-scrollbar-shadow:#000000; --vscode-scrollbarSlider-background:rgba(121, 121, 121, 0.4); --vscode-scrollbarSlider-hoverBackground:rgba(100, 100, 100, 0.7); --vscode-scrollbarSlider-activeBackground:rgba(191, 191, 191, 0.4); --vscode-progressBar-background:#0e70c0; --vscode-editorError-foreground:#f48771; --vscode-editorWarning-foreground:#cca700; --vscode-editorInfo-foreground:#75beff; --vscode-editorHint-foreground:rgba(238, 238, 238, 0.7); --vscode-editor-background:#1e1e1e; --vscode-editor-foreground:#d4d4d4; --vscode-editorWidget-background:#252526; --vscode-editorWidget-foreground:#cccccc; --vscode-editorWidget-border:#454545; --vscode-quickInput-background:#252526; --vscode-quickInput-foreground:#cccccc; --vscode-quickInputTitle-background:rgba(255, 255, 255, 0.1); --vscode-pickerGroup-foreground:#3794ff; --vscode-pickerGroup-border:#3f3f46; --vscode-editor-selectionBackground:#264f78; --vscode-editor-inactiveSelectionBackground:#3a3d41; --vscode-editor-selectionHighlightBackground:rgba(173, 214, 255, 0.15); --vscode-editor-findMatchBackground:#515c6a; --vscode-editor-findMatchHighlightBackground:rgba(234, 92, 0, 0.33); --vscode-editor-findRangeHighlightBackground:rgba(58, 61, 65, 0.4); --vscode-searchEditor-findMatchBackground:rgba(234, 92, 0, 0.22); --vscode-editor-hoverHighlightBackground:rgba(38, 79, 120, 0.25); --vscode-editorHoverWidget-background:#252526; --vscode-editorHoverWidget-foreground:#cccccc; --vscode-editorHoverWidget-border:#454545; --vscode-editorHoverWidget-statusBarBackground:#2c2c2d; --vscode-editorLink-activeForeground:#4e94ce; --vscode-editorLightBulb-foreground:#ffcc00; --vscode-editorLightBulbAutoFix-foreground:#75beff; --vscode-diffEditor-insertedTextBackground:rgba(155, 185, 85, 0.2); --vscode-diffEditor-removedTextBackground:rgba(255, 0, 0, 0.2); --vscode-diffEditor-diagonalFill:rgba(204, 204, 204, 0.2); --vscode-list-focusBackground:#062f4a; --vscode-list-activeSelectionBackground:#094771; --vscode-list-activeSelectionForeground:#ffffff; --vscode-list-inactiveSelectionBackground:#37373d; --vscode-list-hoverBackground:#2a2d2e; --vscode-list-dropBackground:#383b3d; --vscode-list-highlightForeground:#0097fb; --vscode-list-invalidItemForeground:#b89500; --vscode-list-errorForeground:#f88070; --vscode-list-warningForeground:#cca700; --vscode-listFilterWidget-background:#653723; --vscode-listFilterWidget-outline:rgba(0, 0, 0, 0); --vscode-listFilterWidget-noMatchesOutline:#be1100; --vscode-list-filterMatchBackground:rgba(234, 92, 0, 0.33); --vscode-tree-indentGuidesStroke:#585858; --vscode-list-deemphasizedForeground:#8c8c8c; --vscode-menu-foreground:#cccccc; --vscode-menu-background:#252526; --vscode-menu-selectionForeground:#ffffff; --vscode-menu-selectionBackground:#094771; --vscode-menu-separatorBackground:#bbbbbb; --vscode-editor-snippetTabstopHighlightBackground:rgba(124, 124, 124, 0.3); --vscode-editor-snippetFinalTabstopHighlightBorder:#525252; --vscode-breadcrumb-foreground:rgba(204, 204, 204, 0.8); --vscode-breadcrumb-background:#1e1e1e; --vscode-breadcrumb-focusForeground:#e0e0e0; --vscode-breadcrumb-activeSelectionForeground:#e0e0e0; --vscode-breadcrumbPicker-background:#252526; --vscode-merge-currentHeaderBackground:rgba(64, 200, 174, 0.5); --vscode-merge-currentContentBackground:rgba(64, 200, 174, 0.2); --vscode-merge-incomingHeaderBackground:rgba(64, 166, 255, 0.5); --vscode-merge-incomingContentBackground:rgba(64, 166, 255, 0.2); --vscode-merge-commonHeaderBackground:rgba(96, 96, 96, 0.4); --vscode-merge-commonContentBackground:rgba(96, 96, 96, 0.16); --vscode-editorOverviewRuler-currentContentForeground:rgba(64, 200, 174, 0.5); --vscode-editorOverviewRuler-incomingContentForeground:rgba(64, 166, 255, 0.5); --vscode-editorOverviewRuler-commonContentForeground:rgba(96, 96, 96, 0.4); --vscode-editorOverviewRuler-findMatchForeground:rgba(209, 134, 22, 0.49); --vscode-editorOverviewRuler-selectionHighlightForeground:rgba(160, 160, 160, 0.8); --vscode-minimap-findMatchHighlight:#d18616; --vscode-minimap-selectionHighlight:#264f78; --vscode-minimap-errorHighlight:rgba(255, 18, 18, 0.7); --vscode-minimap-warningHighlight:#cca700; --vscode-minimapSlider-background:rgba(121, 121, 121, 0.2); --vscode-minimapSlider-hoverBackground:rgba(100, 100, 100, 0.35); --vscode-minimapSlider-activeBackground:rgba(191, 191, 191, 0.2); --vscode-problemsErrorIcon-foreground:#f48771; --vscode-problemsWarningIcon-foreground:#cca700; --vscode-problemsInfoIcon-foreground:#75beff; --vscode-charts-foreground:#cccccc; --vscode-charts-lines:rgba(204, 204, 204, 0.5); --vscode-charts-red:#f48771; --vscode-charts-blue:#75beff; --vscode-charts-yellow:#cca700; --vscode-charts-orange:#d18616; --vscode-charts-green:#89d185; --vscode-charts-purple:#b180d7; --vscode-editor-lineHighlightBorder:#282828; --vscode-editor-rangeHighlightBackground:rgba(255, 255, 255, 0.04); --vscode-editor-symbolHighlightBackground:rgba(234, 92, 0, 0.33); --vscode-editorCursor-foreground:#aeafad; --vscode-editorWhitespace-foreground:rgba(227, 228, 226, 0.16); --vscode-editorIndentGuide-background:#404040; --vscode-editorIndentGuide-activeBackground:#707070; --vscode-editorLineNumber-foreground:#858585; --vscode-editorActiveLineNumber-foreground:#c6c6c6; --vscode-editorLineNumber-activeForeground:#c6c6c6; --vscode-editorRuler-foreground:#5a5a5a; --vscode-editorCodeLens-foreground:#999999; --vscode-editorBracketMatch-background:rgba(0, 100, 0, 0.1); --vscode-editorBracketMatch-border:#888888; --vscode-editorOverviewRuler-border:rgba(127, 127, 127, 0.3); --vscode-editorGutter-background:#1e1e1e; --vscode-editorUnnecessaryCode-opacity:rgba(0, 0, 0, 0.67); --vscode-editorOverviewRuler-rangeHighlightForeground:rgba(0, 122, 204, 0.6); --vscode-editorOverviewRuler-errorForeground:rgba(255, 18, 18, 0.7); --vscode-editorOverviewRuler-warningForeground:#cca700; --vscode-editorOverviewRuler-infoForeground:#75beff; --vscode-editorOverviewRuler-bracketMatchForeground:#a0a0a0; --vscode-symbolIcon-arrayForeground:#cccccc; --vscode-symbolIcon-booleanForeground:#cccccc; --vscode-symbolIcon-classForeground:#ee9d28; --vscode-symbolIcon-colorForeground:#cccccc; --vscode-symbolIcon-constantForeground:#cccccc; --vscode-symbolIcon-constructorForeground:#b180d7; --vscode-symbolIcon-enumeratorForeground:#ee9d28; --vscode-symbolIcon-enumeratorMemberForeground:#75beff; --vscode-symbolIcon-eventForeground:#ee9d28; --vscode-symbolIcon-fieldForeground:#75beff; --vscode-symbolIcon-fileForeground:#cccccc; --vscode-symbolIcon-folderForeground:#cccccc; --vscode-symbolIcon-functionForeground:#b180d7; --vscode-symbolIcon-interfaceForeground:#75beff; --vscode-symbolIcon-keyForeground:#cccccc; --vscode-symbolIcon-keywordForeground:#cccccc; --vscode-symbolIcon-methodForeground:#b180d7; --vscode-symbolIcon-moduleForeground:#cccccc; --vscode-symbolIcon-namespaceForeground:#cccccc; --vscode-symbolIcon-nullForeground:#cccccc; --vscode-symbolIcon-numberForeground:#cccccc; --vscode-symbolIcon-objectForeground:#cccccc; --vscode-symbolIcon-operatorForeground:#cccccc; --vscode-symbolIcon-packageForeground:#cccccc; --vscode-symbolIcon-propertyForeground:#cccccc; --vscode-symbolIcon-referenceForeground:#cccccc; --vscode-symbolIcon-snippetForeground:#cccccc; --vscode-symbolIcon-stringForeground:#cccccc; --vscode-symbolIcon-structForeground:#cccccc; --vscode-symbolIcon-textForeground:#cccccc; --vscode-symbolIcon-typeParameterForeground:#cccccc; --vscode-symbolIcon-unitForeground:#cccccc; --vscode-symbolIcon-variableForeground:#75beff; --vscode-editor-foldBackground:rgba(38, 79, 120, 0.3); --vscode-editorGutter-foldingControlForeground:#c5c5c5; --vscode-editor-onTypeRenameBackground:rgba(255, 0, 0, 0.3); --vscode-editorSuggestWidget-background:#252526; --vscode-editorSuggestWidget-border:#454545; --vscode-editorSuggestWidget-foreground:#d4d4d4; --vscode-editorSuggestWidget-selectedBackground:#062f4a; --vscode-editorSuggestWidget-highlightForeground:#0097fb; --vscode-editor-wordHighlightBackground:rgba(87, 87, 87, 0.72); --vscode-editor-wordHighlightStrongBackground:rgba(0, 73, 114, 0.72); --vscode-editorOverviewRuler-wordHighlightForeground:rgba(160, 160, 160, 0.8); --vscode-editorOverviewRuler-wordHighlightStrongForeground:rgba(192, 160, 192, 0.8); --vscode-peekViewTitle-background:#1e1e1e; --vscode-peekViewTitleLabel-foreground:#ffffff; --vscode-peekViewTitleDescription-foreground:rgba(204, 204, 204, 0.7); --vscode-peekView-border:#007acc; --vscode-peekViewResult-background:#252526; --vscode-peekViewResult-lineForeground:#bbbbbb; --vscode-peekViewResult-fileForeground:#ffffff; --vscode-peekViewResult-selectionBackground:rgba(51, 153, 255, 0.2); --vscode-peekViewResult-selectionForeground:#ffffff; --vscode-peekViewEditor-background:#001f33; --vscode-peekViewEditorGutter-background:#001f33; --vscode-peekViewResult-matchHighlightBackground:rgba(234, 92, 0, 0.3); --vscode-peekViewEditor-matchHighlightBackground:rgba(255, 143, 0, 0.6); --vscode-editorMarkerNavigationError-background:#f48771; --vscode-editorMarkerNavigationWarning-background:#cca700; --vscode-editorMarkerNavigationInfo-background:#75beff; --vscode-editorMarkerNavigation-background:#2d2d30; --vscode-tab-activeBackground:#1e1e1e; --vscode-tab-unfocusedActiveBackground:#1e1e1e; --vscode-tab-inactiveBackground:#2d2d2d; --vscode-tab-unfocusedInactiveBackground:#2d2d2d; --vscode-tab-activeForeground:#ffffff; --vscode-tab-inactiveForeground:rgba(255, 255, 255, 0.5); --vscode-tab-unfocusedActiveForeground:rgba(255, 255, 255, 0.5); --vscode-tab-unfocusedInactiveForeground:rgba(255, 255, 255, 0.25); --vscode-tab-border:#252526; --vscode-tab-lastPinnedBorder:rgba(204, 204, 204, 0.2); --vscode-tab-activeModifiedBorder:#3399cc; --vscode-tab-inactiveModifiedBorder:rgba(51, 153, 204, 0.5); --vscode-tab-unfocusedActiveModifiedBorder:rgba(51, 153, 204, 0.5); --vscode-tab-unfocusedInactiveModifiedBorder:rgba(51, 153, 204, 0.25); --vscode-editorPane-background:#1e1e1e; --vscode-editorGroupHeader-tabsBackground:#252526; --vscode-editorGroupHeader-noTabsBackground:#1e1e1e; --vscode-editorGroup-border:#444444; --vscode-editorGroup-dropBackground:rgba(83, 89, 93, 0.5); --vscode-imagePreview-border:rgba(128, 128, 128, 0.35); --vscode-panel-background:#1e1e1e; --vscode-panel-border:rgba(128, 128, 128, 0.35); --vscode-panelTitle-activeForeground:#e7e7e7; --vscode-panelTitle-inactiveForeground:rgba(231, 231, 231, 0.6); --vscode-panelTitle-activeBorder:#e7e7e7; --vscode-panel-dropBorder:#e7e7e7; --vscode-panelSection-dropBackground:rgba(83, 89, 93, 0.5); --vscode-panelSectionHeader-background:rgba(128, 128, 128, 0.2); --vscode-panelSection-border:rgba(128, 128, 128, 0.35); --vscode-statusBar-foreground:#ffffff; --vscode-statusBar-noFolderForeground:#ffffff; --vscode-statusBar-background:#007acc; --vscode-statusBar-noFolderBackground:#68217a; --vscode-statusBarItem-activeBackground:rgba(255, 255, 255, 0.18); --vscode-statusBarItem-hoverBackground:rgba(255, 255, 255, 0.12); --vscode-statusBarItem-prominentForeground:#ffffff; --vscode-statusBarItem-prominentBackground:rgba(0, 0, 0, 0.5); --vscode-statusBarItem-prominentHoverBackground:rgba(0, 0, 0, 0.3); --vscode-activityBar-background:#333333; --vscode-activityBar-foreground:#ffffff; --vscode-activityBar-inactiveForeground:rgba(255, 255, 255, 0.4); --vscode-activityBar-activeBorder:#ffffff; --vscode-activityBar-dropBorder:#ffffff; --vscode-activityBarBadge-background:#007acc; --vscode-activityBarBadge-foreground:#ffffff; --vscode-statusBarItem-remoteBackground:#16825d; --vscode-statusBarItem-remoteForeground:#ffffff; --vscode-extensionBadge-remoteBackground:#007acc; --vscode-extensionBadge-remoteForeground:#ffffff; --vscode-sideBar-background:#252526; --vscode-sideBarTitle-foreground:#bbbbbb; --vscode-sideBar-dropBackground:rgba(83, 89, 93, 0.5); --vscode-sideBarSectionHeader-background:rgba(0, 0, 0, 0); --vscode-sideBarSectionHeader-border:rgba(204, 204, 204, 0.2); --vscode-titleBar-activeForeground:#cccccc; --vscode-titleBar-inactiveForeground:rgba(204, 204, 204, 0.6); --vscode-titleBar-activeBackground:#3c3c3c; --vscode-titleBar-inactiveBackground:rgba(60, 60, 60, 0.6); --vscode-menubar-selectionForeground:#cccccc; --vscode-menubar-selectionBackground:rgba(255, 255, 255, 0.1); --vscode-notifications-foreground:#cccccc; --vscode-notifications-background:#252526; --vscode-notificationLink-foreground:#3794ff; --vscode-notificationCenterHeader-background:#303031; --vscode-notifications-border:#303031; --vscode-notificationsErrorIcon-foreground:#f48771; --vscode-notificationsWarningIcon-foreground:#cca700; --vscode-notificationsInfoIcon-foreground:#75beff; --vscode-editorGutter-commentRangeForeground:#c5c5c5; --vscode-editor-stackFrameHighlightBackground:rgba(255, 255, 0, 0.2); --vscode-editor-focusedStackFrameHighlightBackground:rgba(122, 189, 122, 0.3); --vscode-terminal-foreground:#cccccc; --vscode-terminal-selectionBackground:rgba(255, 255, 255, 0.25); --vscode-terminal-border:rgba(128, 128, 128, 0.35); --vscode-statusBar-debuggingBackground:#cc6633; --vscode-statusBar-debuggingForeground:#ffffff; --vscode-settings-headerForeground:#e7e7e7; --vscode-settings-modifiedItemIndicator:#0c7d9d; --vscode-settings-dropdownBackground:#3c3c3c; --vscode-settings-dropdownForeground:#f0f0f0; --vscode-settings-dropdownBorder:#3c3c3c; --vscode-settings-dropdownListBorder:#454545; --vscode-settings-checkboxBackground:#3c3c3c; --vscode-settings-checkboxForeground:#f0f0f0; --vscode-settings-checkboxBorder:#3c3c3c; --vscode-settings-textInputBackground:#3c3c3c; --vscode-settings-textInputForeground:#cccccc; --vscode-settings-numberInputBackground:#3c3c3c; --vscode-settings-numberInputForeground:#cccccc; --vscode-settings-focusedRowBackground:rgba(128, 128, 128, 0.14); --vscode-notebook-rowHoverBackground:rgba(128, 128, 128, 0.07); --vscode-notebook-focusedRowBorder:rgba(255, 255, 255, 0.12); --vscode-debugExceptionWidget-border:#a31515; --vscode-debugExceptionWidget-background:#420b0d; --vscode-editorGutter-modifiedBackground:#0c7d9d; --vscode-editorGutter-addedBackground:#587c0c; --vscode-editorGutter-deletedBackground:#94151b; --vscode-minimapGutter-modifiedBackground:#0c7d9d; --vscode-minimapGutter-addedBackground:#587c0c; --vscode-minimapGutter-deletedBackground:#94151b; --vscode-editorOverviewRuler-modifiedForeground:rgba(12, 125, 157, 0.6); --vscode-editorOverviewRuler-addedForeground:rgba(88, 124, 12, 0.6); --vscode-editorOverviewRuler-deletedForeground:rgba(148, 21, 27, 0.6); --vscode-debugIcon-breakpointForeground:#e51400; --vscode-debugIcon-breakpointDisabledForeground:#848484; --vscode-debugIcon-breakpointUnverifiedForeground:#848484; --vscode-debugIcon-breakpointCurrentStackframeForeground:#ffcc00; --vscode-debugIcon-breakpointStackframeForeground:#89d185; --vscode-debugToolBar-background:#333333; --vscode-debugIcon-startForeground:#89d185; --vscode-debugIcon-pauseForeground:#75beff; --vscode-debugIcon-stopForeground:#f48771; --vscode-debugIcon-disconnectForeground:#f48771; --vscode-debugIcon-restartForeground:#89d185; --vscode-debugIcon-stepOverForeground:#75beff; --vscode-debugIcon-stepIntoForeground:#75beff; --vscode-debugIcon-stepOutForeground:#75beff; --vscode-debugIcon-continueForeground:#75beff; --vscode-debugIcon-stepBackForeground:#75beff; --vscode-debugTokenExpression-name:#c586c0; --vscode-debugTokenExpression-value:rgba(204, 204, 204, 0.6); --vscode-debugTokenExpression-string:#ce9178; --vscode-debugTokenExpression-boolean:#4e94ce; --vscode-debugTokenExpression-number:#b5cea8; --vscode-debugTokenExpression-error:#f48771; --vscode-debugView-exceptionLabelForeground:#cccccc; --vscode-debugView-exceptionLabelBackground:#6c2022; --vscode-debugView-stateLabelForeground:#cccccc; --vscode-debugView-stateLabelBackground:rgba(136, 136, 136, 0.27); --vscode-debugView-valueChangedHighlight:#569cd6; --vscode-debugConsole-infoForeground:#75beff; --vscode-debugConsole-warningForeground:#cca700; --vscode-debugConsole-errorForeground:#f48771; --vscode-debugConsole-sourceForeground:#cccccc; --vscode-debugConsoleInputIcon-foreground:#cccccc; --vscode-extensionButton-prominentBackground:#327e36; --vscode-extensionButton-prominentForeground:#ffffff; --vscode-extensionButton-prominentHoverBackground:#28632b; --vscode-notebook-cellBorderColor:rgba(128, 128, 128, 0.14); --vscode-notebook-focusedEditorBorder:#007fd4; --vscode-notebookStatusSuccessIcon-foreground:#89d185; --vscode-notebookStatusErrorIcon-foreground:#f48771; --vscode-notebookStatusRunningIcon-foreground:#cccccc; --vscode-notebook-outputContainerBackgroundColor:rgba(128, 128, 128, 0.14); --vscode-notebook-cellToolbarSeparator:rgba(128, 128, 128, 0.35); --vscode-notebook-focusedCellBackground:rgba(128, 128, 128, 0.14); --vscode-notebook-cellHoverBackground:rgba(128, 128, 128, 0.07); --vscode-notebook-focusedCellBorder:rgba(255, 255, 255, 0.12); --vscode-notebook-cellStatusBarItemHoverBackground:rgba(255, 255, 255, 0.15); --vscode-notebook-cellInsertionIndicator:#007fd4; --vscode-notebookScrollbarSlider-background:rgba(121, 121, 121, 0.4); --vscode-notebookScrollbarSlider-hoverBackground:rgba(100, 100, 100, 0.7); --vscode-notebookScrollbarSlider-activeBackground:rgba(191, 191, 191, 0.4); --vscode-notebook-symbolHighlightBackground:rgba(255, 255, 255, 0.04); --vscode-scm-providerBorder:#454545; --vscode-terminal-ansiBlack:#000000; --vscode-terminal-ansiRed:#cd3131; --vscode-terminal-ansiGreen:#0dbc79; --vscode-terminal-ansiYellow:#e5e510; --vscode-terminal-ansiBlue:#2472c8; --vscode-terminal-ansiMagenta:#bc3fbc; --vscode-terminal-ansiCyan:#11a8cd; --vscode-terminal-ansiWhite:#e5e5e5; --vscode-terminal-ansiBrightBlack:#666666; --vscode-terminal-ansiBrightRed:#f14c4c; --vscode-terminal-ansiBrightGreen:#23d18b; --vscode-terminal-ansiBrightYellow:#f5f543; --vscode-terminal-ansiBrightBlue:#3b8eea; --vscode-terminal-ansiBrightMagenta:#d670d6; --vscode-terminal-ansiBrightCyan:#29b8db; --vscode-terminal-ansiBrightWhite:#e5e5e5; --vscode-gitDecoration-addedResourceForeground:#81b88b; --vscode-gitDecoration-modifiedResourceForeground:#e2c08d; --vscode-gitDecoration-deletedResourceForeground:#c74e39; --vscode-gitDecoration-untrackedResourceForeground:#73c991; --vscode-gitDecoration-ignoredResourceForeground:#8c8c8c; --vscode-gitDecoration-stageModifiedResourceForeground:#e2c08d; --vscode-gitDecoration-stageDeletedResourceForeground:#c74e39; --vscode-gitDecoration-conflictingResourceForeground:#6c6cc4; --vscode-gitDecoration-submoduleResourceForeground:#8db9e2; --vscode-gitlens-gutterBackgroundColor:rgba(255, 255, 255, 0.07); --vscode-gitlens-gutterForegroundColor:#bebebe; --vscode-gitlens-gutterUncommittedForegroundColor:rgba(0, 188, 242, 0.6); --vscode-gitlens-trailingLineBackgroundColor:rgba(0, 0, 0, 0); --vscode-gitlens-trailingLineForegroundColor:rgba(153, 153, 153, 0.35); --vscode-gitlens-lineHighlightBackgroundColor:rgba(0, 188, 242, 0.2); --vscode-gitlens-lineHighlightOverviewRulerColor:rgba(0, 188, 242, 0.6); --vscode-issues-newIssueDecoration:rgba(255, 255, 255, 0.28);"><head><style id="_defaultStyles">
+	body {
+		background-color: transparent;
+		color: var(--vscode-editor-foreground);
+		font-family: var(--vscode-font-family);
+		font-weight: var(--vscode-font-weight);
+		font-size: var(--vscode-font-size);
+		margin: 0;
+		padding: 0 20px;
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	a {
+		color: var(--vscode-textLink-foreground);
+	}
+
+	a:hover {
+		color: var(--vscode-textLink-activeForeground);
+	}
+
+	a:focus,
+	input:focus,
+	select:focus,
+	textarea:focus {
+		outline: 1px solid -webkit-focus-ring-color;
+		outline-offset: -1px;
+	}
+
+	code {
+		color: var(--vscode-textPreformat-foreground);
+	}
+
+	blockquote {
+		background: var(--vscode-textBlockQuote-background);
+		border-color: var(--vscode-textBlockQuote-border);
+	}
+
+	kbd {
+		color: var(--vscode-editor-foreground);
+		border-radius: 3px;
+		vertical-align: middle;
+		padding: 1px 3px;
+
+		background-color: hsla(0,0%,50%,.17);
+		border: 1px solid rgba(71,71,71,.4);
+		border-bottom-color: rgba(88,88,88,.4);
+		box-shadow: inset 0 -1px 0 rgba(88,88,88,.4);
+	}
+	.vscode-light kbd {
+		background-color: hsla(0,0%,87%,.5);
+		border: 1px solid hsla(0,0%,80%,.7);
+		border-bottom-color: hsla(0,0%,73%,.7);
+		box-shadow: inset 0 -1px 0 hsla(0,0%,73%,.7);
+	}
+
+	::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+
+	::-webkit-scrollbar-corner {
+		background-color: var(--vscode-editor-background);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: var(--vscode-scrollbarSlider-background);
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background-color: var(--vscode-scrollbarSlider-hoverBackground);
+	}
+	::-webkit-scrollbar-thumb:active {
+		background-color: var(--vscode-scrollbarSlider-activeBackground);
+	}</style><script id="_vscodeApiScript">
+			const acquireVsCodeApi = (function() {
+				const originalPostMessage = window.parent.postMessage.bind(window.parent);
+				const targetOrigin = '*';
+				let acquired = false;
+
+				let state = undefined;
+
+				return () => {
+					if (acquired && !undefined) {
+						throw new Error('An instance of the VS Code API has already been acquired');
+					}
+					acquired = true;
+					return Object.freeze({
+						postMessage: function(msg) {
+							return originalPostMessage({ command: 'onmessage', data: msg }, targetOrigin);
+						},
+						setState: function(newState) {
+							state = newState;
+							originalPostMessage({ command: 'do-update-state', data: JSON.stringify(newState) }, targetOrigin);
+							return newState;
+						},
+						getState: function() {
+							return state;
+						}
+					});
+				};
+			})();
+			delete window.parent;
+			delete window.top;
+			delete window.frameElement;
+		</script>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head><body class="vscode-dark" data-vscode-theme-kind="vscode-dark" data-vscode-theme-name="Dark+ (default dark)"><titleindex dependencies<="" title="">
+            
+            
+                <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: dependency&#45;cruiser output Pages: 1 -->
+<svg width="1015pt" height="1203pt" viewBox="0.00 0.00 1014.78 1203.40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1199.4)">
+<title>dependency-cruiser output</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1199.4 1010.7847,-1199.4 1010.7847,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_src</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M20,-102C20,-102 986.7847,-102 986.7847,-102 992.7847,-102 998.7847,-108 998.7847,-114 998.7847,-114 998.7847,-1064 998.7847,-1064 998.7847,-1070 992.7847,-1076 986.7847,-1076 986.7847,-1076 20,-1076 20,-1076 14,-1076 8,-1070 8,-1064 8,-1064 8,-114 8,-114 8,-108 14,-102 20,-102"></path>
+<text text-anchor="middle" x="503.3923" y="-1063.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">src</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_src/main</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M28,-110C28,-110 978.7847,-110 978.7847,-110 984.7847,-110 990.7847,-116 990.7847,-122 990.7847,-122 990.7847,-1037 990.7847,-1037 990.7847,-1043 984.7847,-1049 978.7847,-1049 978.7847,-1049 28,-1049 28,-1049 22,-1049 16,-1043 16,-1037 16,-1037 16,-122 16,-122 16,-116 22,-110 28,-110"></path>
+<text text-anchor="middle" x="503.3923" y="-1036.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">main</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_src/main/Platform</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M107.2557,-560C107.2557,-560 883.2816,-560 883.2816,-560 889.2816,-560 895.2816,-566 895.2816,-572 895.2816,-572 895.2816,-970 895.2816,-970 895.2816,-976 889.2816,-982 883.2816,-982 883.2816,-982 107.2557,-982 107.2557,-982 101.2557,-982 95.2557,-976 95.2557,-970 95.2557,-970 95.2557,-572 95.2557,-572 95.2557,-566 101.2557,-560 107.2557,-560"></path>
+<text text-anchor="middle" x="495.2686" y="-969.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">Platform</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_src/main/Platform/BiliBili</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M189.5113,-568C189.5113,-568 875.2816,-568 875.2816,-568 881.2816,-568 887.2816,-574 887.2816,-580 887.2816,-580 887.2816,-943 887.2816,-943 887.2816,-949 881.2816,-955 875.2816,-955 875.2816,-955 189.5113,-955 189.5113,-955 183.5113,-955 177.5113,-949 177.5113,-943 177.5113,-943 177.5113,-580 177.5113,-580 177.5113,-574 183.5113,-568 189.5113,-568"></path>
+<text text-anchor="middle" x="532.3964" y="-942.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">BiliBili</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_src/main/Platform/BiliBili/Services</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M259.5113,-602C259.5113,-602 867.2816,-602 867.2816,-602 873.2816,-602 879.2816,-608 879.2816,-614 879.2816,-614 879.2816,-916 879.2816,-916 879.2816,-922 873.2816,-928 867.2816,-928 867.2816,-928 259.5113,-928 259.5113,-928 253.5113,-928 247.5113,-922 247.5113,-916 247.5113,-916 247.5113,-614 247.5113,-614 247.5113,-608 253.5113,-602 259.5113,-602"></path>
+<text text-anchor="middle" x="563.3964" y="-915.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">Services</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_src/main/Platform/BiliBili/Services/AvaterCollectService</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M399.5113,-610C399.5113,-610 474.5113,-610 474.5113,-610 480.5113,-610 486.5113,-616 486.5113,-622 486.5113,-622 486.5113,-651 486.5113,-651 486.5113,-657 480.5113,-663 474.5113,-663 474.5113,-663 399.5113,-663 399.5113,-663 393.5113,-663 387.5113,-657 387.5113,-651 387.5113,-651 387.5113,-622 387.5113,-622 387.5113,-616 393.5113,-610 399.5113,-610"></path>
+<text text-anchor="middle" x="437.0113" y="-650.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">AvaterCollectService</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_src/main/Platform/BiliBili/Services/DanmakuService</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M576.5113,-619C576.5113,-619 859.2816,-619 859.2816,-619 865.2816,-619 871.2816,-625 871.2816,-631 871.2816,-631 871.2816,-722 871.2816,-722 871.2816,-728 865.2816,-734 859.2816,-734 859.2816,-734 576.5113,-734 576.5113,-734 570.5113,-734 564.5113,-728 564.5113,-722 564.5113,-722 564.5113,-631 564.5113,-631 564.5113,-625 570.5113,-619 576.5113,-619"></path>
+<text text-anchor="middle" x="717.8964" y="-721.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">DanmakuService</text>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_src/main/Platform/BiliBili/Services/FollowerService</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M409.5113,-671C409.5113,-671 464.5113,-671 464.5113,-671 470.5113,-671 476.5113,-677 476.5113,-683 476.5113,-683 476.5113,-712 476.5113,-712 476.5113,-718 470.5113,-724 464.5113,-724 464.5113,-724 409.5113,-724 409.5113,-724 403.5113,-724 397.5113,-718 397.5113,-712 397.5113,-712 397.5113,-683 397.5113,-683 397.5113,-677 403.5113,-671 409.5113,-671"></path>
+<text text-anchor="middle" x="437.0113" y="-711.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">FollowerService</text>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_src/main/Platform/BiliBili/Services/HistoryService</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M413.5113,-742C413.5113,-742 741.5157,-742 741.5157,-742 747.5157,-742 753.5157,-748 753.5157,-754 753.5157,-754 753.5157,-797 753.5157,-797 753.5157,-803 747.5157,-809 741.5157,-809 741.5157,-809 413.5113,-809 413.5113,-809 407.5113,-809 401.5113,-803 401.5113,-797 401.5113,-797 401.5113,-754 401.5113,-754 401.5113,-748 407.5113,-742 413.5113,-742"></path>
+<text text-anchor="middle" x="577.5135" y="-796.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">HistoryService</text>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_src/main/Platform/BiliBili/Services/StatisticsService</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M413.5113,-817C413.5113,-817 747.7698,-817 747.7698,-817 753.7698,-817 759.7698,-823 759.7698,-829 759.7698,-829 759.7698,-889 759.7698,-889 759.7698,-895 753.7698,-901 747.7698,-901 747.7698,-901 413.5113,-901 413.5113,-901 407.5113,-901 401.5113,-895 401.5113,-889 401.5113,-889 401.5113,-829 401.5113,-829 401.5113,-823 407.5113,-817 413.5113,-817"></path>
+<text text-anchor="middle" x="580.6405" y="-888.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">StatisticsService</text>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_src/main/Services</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M576.5113,-200C576.5113,-200 748.7671,-200 748.7671,-200 754.7671,-200 760.7671,-206 760.7671,-212 760.7671,-212 760.7671,-276 760.7671,-276 760.7671,-282 754.7671,-288 748.7671,-288 748.7671,-288 576.5113,-288 576.5113,-288 570.5113,-288 564.5113,-282 564.5113,-276 564.5113,-276 564.5113,-212 564.5113,-212 564.5113,-206 570.5113,-200 576.5113,-200"></path>
+<text text-anchor="middle" x="662.6392" y="-275.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">Services</text>
+</g>
+<g id="clust12" class="cluster">
+<title>cluster_src/main/Services/WebsocketService</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M674.7671,-208C674.7671,-208 740.7671,-208 740.7671,-208 746.7671,-208 752.7671,-214 752.7671,-220 752.7671,-220 752.7671,-249 752.7671,-249 752.7671,-255 746.7671,-261 740.7671,-261 740.7671,-261 674.7671,-261 674.7671,-261 668.7671,-261 662.7671,-255 662.7671,-249 662.7671,-249 662.7671,-220 662.7671,-220 662.7671,-214 668.7671,-208 674.7671,-208"></path>
+<text text-anchor="middle" x="707.7671" y="-248.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">WebsocketService</text>
+</g>
+<g id="clust13" class="cluster">
+<title>cluster_src/main/Utilities</title>
+<path fill="#ffffff" stroke="#000000" stroke-width="2" d="M920.0331,-969C920.0331,-969 966.0331,-969 966.0331,-969 972.0331,-969 978.0331,-975 978.0331,-981 978.0331,-981 978.0331,-1010 978.0331,-1010 978.0331,-1016 972.0331,-1022 966.0331,-1022 966.0331,-1022 920.0331,-1022 920.0331,-1022 914.0331,-1022 908.0331,-1016 908.0331,-1010 908.0331,-1010 908.0331,-981 908.0331,-981 908.0331,-975 914.0331,-969 920.0331,-969"></path>
+<text text-anchor="middle" x="943.0331" y="-1009.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00" fill="#000000">Utilities</text>
+</g>
+<!-- crypto -->
+<g id="node1" class="node">
+<title>crypto</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M854.3319,-1133.3011C854.3319,-1133.3011 812.7333,-1133.3011 812.7333,-1133.3011 809.633,-1133.3011 806.5326,-1130.2007 806.5326,-1127.1004 806.5326,-1127.1004 806.5326,-1120.8996 806.5326,-1120.8996 806.5326,-1117.7993 809.633,-1114.6989 812.7333,-1114.6989 812.7333,-1114.6989 854.3319,-1114.6989 854.3319,-1114.6989 857.4322,-1114.6989 860.5326,-1117.7993 860.5326,-1120.8996 860.5326,-1120.8996 860.5326,-1127.1004 860.5326,-1127.1004 860.5326,-1130.2007 857.4322,-1133.3011 854.3319,-1133.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-1121.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">crypto</text>
+</g>
+<!-- events -->
+<g id="node2" class="node">
+<title>events</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M854.3319,-1164.3011C854.3319,-1164.3011 812.7333,-1164.3011 812.7333,-1164.3011 809.633,-1164.3011 806.5326,-1161.2007 806.5326,-1158.1004 806.5326,-1158.1004 806.5326,-1151.8996 806.5326,-1151.8996 806.5326,-1148.7993 809.633,-1145.6989 812.7333,-1145.6989 812.7333,-1145.6989 854.3319,-1145.6989 854.3319,-1145.6989 857.4322,-1145.6989 860.5326,-1148.7993 860.5326,-1151.8996 860.5326,-1151.8996 860.5326,-1158.1004 860.5326,-1158.1004 860.5326,-1161.2007 857.4322,-1164.3011 854.3319,-1164.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-1152.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">events</text>
+</g>
+<!-- fs -->
+<g id="node3" class="node">
+<title>fs</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M151.0549,-94.3011C151.0549,-94.3011 109.4564,-94.3011 109.4564,-94.3011 106.356,-94.3011 103.2557,-91.2007 103.2557,-88.1004 103.2557,-88.1004 103.2557,-81.8996 103.2557,-81.8996 103.2557,-78.7993 106.356,-75.6989 109.4564,-75.6989 109.4564,-75.6989 151.0549,-75.6989 151.0549,-75.6989 154.1553,-75.6989 157.2557,-78.7993 157.2557,-81.8996 157.2557,-81.8996 157.2557,-88.1004 157.2557,-88.1004 157.2557,-91.2007 154.1553,-94.3011 151.0549,-94.3011"></path>
+<text text-anchor="middle" x="130.2557" y="-82.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">fs</text>
+</g>
+<!-- http -->
+<g id="node4" class="node">
+<title>http</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M854.3319,-1102.3011C854.3319,-1102.3011 812.7333,-1102.3011 812.7333,-1102.3011 809.633,-1102.3011 806.5326,-1099.2007 806.5326,-1096.1004 806.5326,-1096.1004 806.5326,-1089.8996 806.5326,-1089.8996 806.5326,-1086.7993 809.633,-1083.6989 812.7333,-1083.6989 812.7333,-1083.6989 854.3319,-1083.6989 854.3319,-1083.6989 857.4322,-1083.6989 860.5326,-1086.7993 860.5326,-1089.8996 860.5326,-1089.8996 860.5326,-1096.1004 860.5326,-1096.1004 860.5326,-1099.2007 857.4322,-1102.3011 854.3319,-1102.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-1090.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">http</text>
+</g>
+<!-- https -->
+<g id="node5" class="node">
+<title>https</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M854.3319,-94.3011C854.3319,-94.3011 812.7333,-94.3011 812.7333,-94.3011 809.633,-94.3011 806.5326,-91.2007 806.5326,-88.1004 806.5326,-88.1004 806.5326,-81.8996 806.5326,-81.8996 806.5326,-78.7993 809.633,-75.6989 812.7333,-75.6989 812.7333,-75.6989 854.3319,-75.6989 854.3319,-75.6989 857.4322,-75.6989 860.5326,-78.7993 860.5326,-81.8996 860.5326,-81.8996 860.5326,-88.1004 860.5326,-88.1004 860.5326,-91.2007 857.4322,-94.3011 854.3319,-94.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-82.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">https</text>
+</g>
+<!-- package.json -->
+<g id="node6" class="node">
+<title>package.json</title>
+<g id="a_node6"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/package.json" xlink:title="package.json">
+<path fill="#ffee44" stroke="#000000" d="M971.3523,-36.3011C971.3523,-36.3011 914.7139,-36.3011 914.7139,-36.3011 911.6135,-36.3011 908.5132,-33.2007 908.5132,-30.1004 908.5132,-30.1004 908.5132,-23.8996 908.5132,-23.8996 908.5132,-20.7993 911.6135,-17.6989 914.7139,-17.6989 914.7139,-17.6989 971.3523,-17.6989 971.3523,-17.6989 974.4527,-17.6989 977.553,-20.7993 977.553,-23.8996 977.553,-23.8996 977.553,-30.1004 977.553,-30.1004 977.553,-33.2007 974.4527,-36.3011 971.3523,-36.3011"></path>
+<text text-anchor="middle" x="943.0331" y="-24.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">package.json</text>
+</a>
+</g>
+</g>
+<!-- path -->
+<g id="node7" class="node">
+<title>path</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M963.8324,-80.3011C963.8324,-80.3011 922.2338,-80.3011 922.2338,-80.3011 919.1335,-80.3011 916.0331,-77.2007 916.0331,-74.1004 916.0331,-74.1004 916.0331,-67.8996 916.0331,-67.8996 916.0331,-64.7993 919.1335,-61.6989 922.2338,-61.6989 922.2338,-61.6989 963.8324,-61.6989 963.8324,-61.6989 966.9327,-61.6989 970.0331,-64.7993 970.0331,-67.8996 970.0331,-67.8996 970.0331,-74.1004 970.0331,-74.1004 970.0331,-77.2007 966.9327,-80.3011 963.8324,-80.3011"></path>
+<text text-anchor="middle" x="943.0331" y="-68.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">path</text>
+</g>
+<!-- src/main/Consts.js -->
+<g id="node8" class="node">
+<title>src/main/Consts.js</title>
+<g id="a_node8"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Consts.js" xlink:title="Consts.js">
+<path fill="#ffffcc" stroke="#000000" d="M854.3319,-234.3011C854.3319,-234.3011 812.7333,-234.3011 812.7333,-234.3011 809.633,-234.3011 806.5326,-231.2007 806.5326,-228.1004 806.5326,-228.1004 806.5326,-221.8996 806.5326,-221.8996 806.5326,-218.7993 809.633,-215.6989 812.7333,-215.6989 812.7333,-215.6989 854.3319,-215.6989 854.3319,-215.6989 857.4322,-215.6989 860.5326,-218.7993 860.5326,-221.8996 860.5326,-221.8996 860.5326,-228.1004 860.5326,-228.1004 860.5326,-231.2007 857.4322,-234.3011 854.3319,-234.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-222.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Consts.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Consts.js&#45;&gt;package.json -->
+<g id="edge1" class="edge">
+<title>src/main/Consts.js-&gt;package.json</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M839.2883,-215.6655C851.5253,-195.3941 880.2357,-145.5026 895.2816,-100 901.5215,-81.1287 892.7204,-72.8382 903.2816,-56 907.2533,-49.6677 913.1539,-44.2762 919.2009,-39.9221"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="920.4677,-41.601 924.2757,-36.5108 918.1245,-38.1153 920.4677,-41.601"></polygon>
+</g>
+<!-- src/main/Consts.js&#45;&gt;path -->
+<g id="edge3" class="edge">
+<title>src/main/Consts.js-&gt;path</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M837.9138,-215.5125C847.8031,-194.6429 873.3436,-143.693 903.2816,-107 909.8813,-98.9111 918.3255,-91.0019 925.7324,-84.6666"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="927.4019,-86.0083 930.6592,-80.5493 924.7085,-82.7855 927.4019,-86.0083"></polygon>
+</g>
+<!-- src/main/ElectronMock.js -->
+<g id="node9" class="node">
+<title>src/main/ElectronMock.js</title>
+<g id="a_node9"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/ElectronMock.js" xlink:title="ElectronMock.js">
+<path fill="#ffffcc" stroke="#000000" d="M976.337,-732.3011C976.337,-732.3011 909.7292,-732.3011 909.7292,-732.3011 906.6288,-732.3011 903.5285,-729.2007 903.5285,-726.1004 903.5285,-726.1004 903.5285,-719.8996 903.5285,-719.8996 903.5285,-716.7993 906.6288,-713.6989 909.7292,-713.6989 909.7292,-713.6989 976.337,-713.6989 976.337,-713.6989 979.4374,-713.6989 982.5377,-716.7993 982.5377,-719.8996 982.5377,-719.8996 982.5377,-726.1004 982.5377,-726.1004 982.5377,-729.2007 979.4374,-732.3011 976.337,-732.3011"></path>
+<text text-anchor="middle" x="943.0331" y="-720.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">ElectronMock.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Consts.js&#45;&gt;src/main/ElectronMock.js -->
+<g id="edge2" class="edge">
+<title>src/main/Consts.js-&gt;src/main/ElectronMock.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M838.5224,-234.4547C850.7585,-258.1626 882.2063,-322.3731 895.2816,-380 907.0107,-431.6943 896.8632,-446.3817 903.2816,-499 912.916,-577.9846 932.0049,-671.3777 939.701,-707.5863"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="937.6926,-708.237 941.0007,-713.6654 941.7998,-707.3589 937.6926,-708.237"></polygon>
+</g>
+<!-- src/main/EventBus.js -->
+<g id="node10" class="node">
+<title>src/main/EventBus.js</title>
+<g id="a_node10"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/EventBus.js" xlink:title="EventBus.js">
+<path fill="#ffffcc" stroke="#000000" d="M968.3471,-493.3011C968.3471,-493.3011 917.7191,-493.3011 917.7191,-493.3011 914.6188,-493.3011 911.5184,-490.2007 911.5184,-487.1004 911.5184,-487.1004 911.5184,-480.8996 911.5184,-480.8996 911.5184,-477.7993 914.6188,-474.6989 917.7191,-474.6989 917.7191,-474.6989 968.3471,-474.6989 968.3471,-474.6989 971.4474,-474.6989 974.5478,-477.7993 974.5478,-480.8996 974.5478,-480.8996 974.5478,-487.1004 974.5478,-487.1004 974.5478,-490.2007 971.4474,-493.3011 968.3471,-493.3011"></path>
+<text text-anchor="middle" x="943.0331" y="-481.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">EventBus.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/KVTable.js -->
+<g id="node11" class="node">
+<title>src/main/KVTable.js</title>
+<g id="a_node11"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/KVTable.js" xlink:title="KVTable.js">
+<path fill="#ffffcc" stroke="#000000" d="M856.8408,-522.3011C856.8408,-522.3011 810.2244,-522.3011 810.2244,-522.3011 807.124,-522.3011 804.0237,-519.2007 804.0237,-516.1004 804.0237,-516.1004 804.0237,-509.8996 804.0237,-509.8996 804.0237,-506.7993 807.124,-503.6989 810.2244,-503.6989 810.2244,-503.6989 856.8408,-503.6989 856.8408,-503.6989 859.9412,-503.6989 863.0415,-506.7993 863.0415,-509.8996 863.0415,-509.8996 863.0415,-516.1004 863.0415,-516.1004 863.0415,-519.2007 859.9412,-522.3011 856.8408,-522.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-510.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">KVTable.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Main.js -->
+<g id="node12" class="node">
+<title>src/main/Main.js</title>
+<g id="a_node12"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Main.js" xlink:title="Main.js">
+<path fill="#ffffcc" stroke="#000000" d="M457.3106,-193.3011C457.3106,-193.3011 415.712,-193.3011 415.712,-193.3011 412.6117,-193.3011 409.5113,-190.2007 409.5113,-187.1004 409.5113,-187.1004 409.5113,-180.8996 409.5113,-180.8996 409.5113,-177.7993 412.6117,-174.6989 415.712,-174.6989 415.712,-174.6989 457.3106,-174.6989 457.3106,-174.6989 460.4109,-174.6989 463.5113,-177.7993 463.5113,-180.8996 463.5113,-180.8996 463.5113,-187.1004 463.5113,-187.1004 463.5113,-190.2007 460.4109,-193.3011 457.3106,-193.3011"></path>
+<text text-anchor="middle" x="436.5113" y="-181.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Main.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Main.js&#45;&gt;src/main/Consts.js -->
+<g id="edge4" class="edge">
+<title>src/main/Main.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.837,-177.0176C520.7295,-163.7741 655.3687,-139.2105 760.7671,-173 783.9439,-180.4302 806.0192,-198.257 819.6525,-210.9629"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="818.4907,-212.7573 824.2798,-215.3836 821.392,-209.7204 818.4907,-212.7573"></polygon>
+</g>
+<!-- src/main/Main.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge5" class="edge">
+<title>src/main/Main.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M444.6701,-193.6054C463.418,-214.9804 512.0123,-266.5154 564.5113,-291 699.8457,-354.1177 781.3084,-253.5149 895.2816,-350 913.8472,-365.7169 932.1149,-436.5884 939.5504,-468.4271"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="937.5774,-469.2181 940.9688,-474.5948 941.6705,-468.2767 937.5774,-469.2181"></polygon>
+</g>
+<!-- src/main/Main.js&#45;&gt;src/main/KVTable.js -->
+<g id="edge6" class="edge">
+<title>src/main/Main.js-&gt;src/main/KVTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.66,-183.8056C537.7773,-183.5426 739.4787,-184.7156 760.7671,-205 793.9595,-236.6272 771.3298,-365.9443 784.0228,-410 793.5306,-443.0003 812.8157,-478.4635 824.3096,-497.9722"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="822.7278,-499.4193 827.6071,-503.494 826.3337,-497.2659 822.7278,-499.4193"></polygon>
+</g>
+<!-- src/main/Services/index.js -->
+<g id="node13" class="node">
+<title>src/main/Services/index.js</title>
+<g id="a_node13"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Services/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M620.3106,-234.3011C620.3106,-234.3011 578.712,-234.3011 578.712,-234.3011 575.6117,-234.3011 572.5113,-231.2007 572.5113,-228.1004 572.5113,-228.1004 572.5113,-221.8996 572.5113,-221.8996 572.5113,-218.7993 575.6117,-215.6989 578.712,-215.6989 578.712,-215.6989 620.3106,-215.6989 620.3106,-215.6989 623.4109,-215.6989 626.5113,-218.7993 626.5113,-221.8996 626.5113,-221.8996 626.5113,-228.1004 626.5113,-228.1004 626.5113,-231.2007 623.4109,-234.3011 620.3106,-234.3011"></path>
+<text text-anchor="middle" x="599.5113" y="-222.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Main.js&#45;&gt;src/main/Services/index.js -->
+<g id="edge7" class="edge">
+<title>src/main/Main.js-&gt;src/main/Services/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.7938,-190.8625C492.0871,-197.9792 536.3349,-209.109 566.5619,-216.7121"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="566.0804,-218.7564 572.4115,-218.1835 567.105,-214.6832 566.0804,-218.7564"></polygon>
+</g>
+<!-- src/main/WebInterfaceBase.js -->
+<g id="node14" class="node">
+<title>src/main/WebInterfaceBase.js</title>
+<g id="a_node14"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/WebInterfaceBase.js" xlink:title="WebInterfaceBase.js">
+<path fill="#ffffcc" stroke="#000000" d="M876.8515,-404.3011C876.8515,-404.3011 790.2137,-404.3011 790.2137,-404.3011 787.1133,-404.3011 784.013,-401.2007 784.013,-398.1004 784.013,-398.1004 784.013,-391.8996 784.013,-391.8996 784.013,-388.7993 787.1133,-385.6989 790.2137,-385.6989 790.2137,-385.6989 876.8515,-385.6989 876.8515,-385.6989 879.9519,-385.6989 883.0522,-388.7993 883.0522,-391.8996 883.0522,-391.8996 883.0522,-398.1004 883.0522,-398.1004 883.0522,-401.2007 879.9519,-404.3011 876.8515,-404.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-392.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">WebInterfaceBase.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Main.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge8" class="edge">
+<title>src/main/Main.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.6598,-182.4923C537.3051,-178.6462 736.9427,-169.9282 760.7671,-187 769.0444,-192.9313 813.8968,-332.9069 828.7515,-379.8284"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="826.7541,-380.4771 830.5649,-385.5651 830.7587,-379.2111 826.7541,-380.4771"></polygon>
+</g>
+<!-- src/main/Services/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge76" class="edge">
+<title>src/main/Services/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M620.0926,-234.3632C622.2939,-235.5254 624.472,-236.7475 626.5113,-238 642.7211,-247.9558 645.3725,-252.4807 660.5113,-264 717.1994,-307.1347 784.5255,-358.0072 815.858,-381.6619"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="814.8714,-383.5483 820.9254,-385.4872 817.4019,-380.1962 814.8714,-383.5483"></polygon>
+</g>
+<!-- src/main/Services/WebsocketService/index.js -->
+<g id="node39" class="node">
+<title>src/main/Services/WebsocketService/index.js</title>
+<g id="a_node39"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Services/WebsocketService/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M728.5663,-234.3011C728.5663,-234.3011 686.9678,-234.3011 686.9678,-234.3011 683.8674,-234.3011 680.7671,-231.2007 680.7671,-228.1004 680.7671,-228.1004 680.7671,-221.8996 680.7671,-221.8996 680.7671,-218.7993 683.8674,-215.6989 686.9678,-215.6989 686.9678,-215.6989 728.5663,-215.6989 728.5663,-215.6989 731.6667,-215.6989 734.7671,-218.7993 734.7671,-221.8996 734.7671,-221.8996 734.7671,-228.1004 734.7671,-228.1004 734.7671,-231.2007 731.6667,-234.3011 728.5663,-234.3011"></path>
+<text text-anchor="middle" x="707.7671" y="-222.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Services/index.js&#45;&gt;src/main/Services/WebsocketService/index.js -->
+<g id="edge77" class="edge">
+<title>src/main/Services/index.js-&gt;src/main/Services/WebsocketService/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M626.5495,-225C641.0162,-225 658.9613,-225 674.3013,-225"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="674.6983,-227.1001 680.6983,-225 674.6983,-222.9001 674.6983,-227.1001"></polygon>
+</g>
+<!-- src/main/ModuleManager.js -->
+<g id="node15" class="node">
+<title>src/main/ModuleManager.js</title>
+<g id="a_node15"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/ModuleManager.js" xlink:title="ModuleManager.js">
+<path fill="#ffffcc" stroke="#000000" d="M746.5778,-136.3011C746.5778,-136.3011 668.9563,-136.3011 668.9563,-136.3011 665.8559,-136.3011 662.7555,-133.2007 662.7555,-130.1004 662.7555,-130.1004 662.7555,-123.8996 662.7555,-123.8996 662.7555,-120.7993 665.8559,-117.6989 668.9563,-117.6989 668.9563,-117.6989 746.5778,-117.6989 746.5778,-117.6989 749.6782,-117.6989 752.7786,-120.7993 752.7786,-123.8996 752.7786,-123.8996 752.7786,-130.1004 752.7786,-130.1004 752.7786,-133.2007 749.6782,-136.3011 746.5778,-136.3011"></path>
+<text text-anchor="middle" x="707.7671" y="-124.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">ModuleManager.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/ModuleManager.js&#45;&gt;path -->
+<g id="edge13" class="edge">
+<title>src/main/ModuleManager.js-&gt;path</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M712.4305,-117.4764C722.4282,-98.2994 747.9803,-55.4596 784.0228,-39 829.0028,-18.4589 847.9722,-24.6139 895.2816,-39 907.2999,-42.6546 919.0443,-50.4519 927.8784,-57.4343"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="927.0119,-59.441 932.9792,-61.6323 929.6809,-56.198 927.0119,-59.441"></polygon>
+</g>
+<!-- src/main/ModuleManager.js&#45;&gt;src/main/Consts.js -->
+<g id="edge9" class="edge">
+<title>src/main/ModuleManager.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M743.4288,-136.3268C749.4666,-138.6738 755.4838,-141.5381 760.7671,-145 764.4169,-147.3916 801.1515,-188.5121 820.9852,-210.8409"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="819.6201,-212.4664 825.1737,-215.5597 822.7613,-209.6783 819.6201,-212.4664"></polygon>
+</g>
+<!-- src/main/ModuleManager.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge10" class="edge">
+<title>src/main/ModuleManager.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M753.0298,-134.1704C796.6989,-143.6125 861.0705,-164.6788 895.2816,-210 926.5337,-251.4013 938.9628,-416.308 942.1509,-468.2488"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="940.0725,-468.6757 942.5253,-474.5403 944.2651,-468.4262 940.0725,-468.6757"></polygon>
+</g>
+<!-- src/main/ModuleManager.js&#45;&gt;src/main/KVTable.js -->
+<g id="edge11" class="edge">
+<title>src/main/ModuleManager.js-&gt;src/main/KVTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M719.8317,-136.5911C732.4295,-147.3752 751.6035,-166.1293 760.7671,-187 800.8276,-278.2414 756.8686,-314.1225 784.0228,-410 793.3812,-443.043 812.7189,-478.4912 824.2626,-497.9856"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="822.6863,-499.4399 827.5752,-503.5031 826.2871,-497.278 822.6863,-499.4399"></polygon>
+</g>
+<!-- src/main/ModuleManager.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge12" class="edge">
+<title>src/main/ModuleManager.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M722.7792,-136.6336C734.6343,-144.9525 750.7893,-157.9801 760.7671,-173 763.7802,-177.5358 812.9714,-330.7714 828.722,-379.9618"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="826.724,-380.6085 830.5532,-385.6826 830.7241,-379.328 826.724,-380.6085"></polygon>
+</g>
+<!-- url -->
+<g id="node16" class="node">
+<title>url</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M854.3319,-63.3011C854.3319,-63.3011 812.7333,-63.3011 812.7333,-63.3011 809.633,-63.3011 806.5326,-60.2007 806.5326,-57.1004 806.5326,-57.1004 806.5326,-50.8996 806.5326,-50.8996 806.5326,-47.7993 809.633,-44.6989 812.7333,-44.6989 812.7333,-44.6989 854.3319,-44.6989 854.3319,-44.6989 857.4322,-44.6989 860.5326,-47.7993 860.5326,-50.8996 860.5326,-50.8996 860.5326,-57.1004 860.5326,-57.1004 860.5326,-60.2007 857.4322,-63.3011 854.3319,-63.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-51.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">url</text>
+</g>
+<!-- src/main/ModuleManager.js&#45;&gt;url -->
+<g id="edge14" class="edge">
+<title>src/main/ModuleManager.js-&gt;url</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M717.883,-117.6944C731.83,-105.2926 758.1827,-83.3618 784.0228,-70 789.1493,-67.3491 794.8007,-65.0248 800.3958,-63.0292"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="801.4063,-64.9044 806.4173,-60.9929 800.0608,-60.9257 801.4063,-64.9044"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/API.js -->
+<g id="node17" class="node">
+<title>src/main/Platform/BiliBili/API.js</title>
+<g id="a_node17"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/API.js" xlink:title="API.js">
+<path fill="#ffffcc" stroke="#000000" d="M728.5663,-594.3011C728.5663,-594.3011 686.9678,-594.3011 686.9678,-594.3011 683.8674,-594.3011 680.7671,-591.2007 680.7671,-588.1004 680.7671,-588.1004 680.7671,-581.8996 680.7671,-581.8996 680.7671,-578.7993 683.8674,-575.6989 686.9678,-575.6989 686.9678,-575.6989 728.5663,-575.6989 728.5663,-575.6989 731.6667,-575.6989 734.7671,-578.7993 734.7671,-581.8996 734.7671,-581.8996 734.7671,-588.1004 734.7671,-588.1004 734.7671,-591.2007 731.6667,-594.3011 728.5663,-594.3011"></path>
+<text text-anchor="middle" x="707.7671" y="-582.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">API.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/API.js&#45;&gt;crypto -->
+<g id="edge20" class="edge">
+<title>src/main/Platform/BiliBili/API.js-&gt;crypto</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M734.7267,-594.3642C744.6318,-599.2264 754.8599,-606.2429 760.7671,-616 789.1104,-662.8164 750.7836,-1064.5227 784.0228,-1108 788.1393,-1113.3844 794.0957,-1116.987 800.46,-1119.3897"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="800.0239,-1121.4548 806.3783,-1121.2757 801.2992,-1117.453 800.0239,-1121.4548"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/API.js&#45;&gt;https -->
+<g id="edge21" class="edge">
+<title>src/main/Platform/BiliBili/API.js-&gt;https</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M709.3852,-575.5559C715.9875,-536.9486 741.4534,-387.3258 760.7671,-264 766.224,-229.1551 762.6823,-135.0807 784.0228,-107 788.2494,-101.4385 794.1904,-97.2523 800.4953,-94.1115"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="801.7181,-95.8662 806.3492,-91.5115 800.0133,-92.0278 801.7181,-95.8662"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/API.js&#45;&gt;src/main/Consts.js -->
+<g id="edge15" class="edge">
+<title>src/main/Platform/BiliBili/API.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M734.9946,-584.4441C744.4489,-582.8321 754.293,-579.3015 760.7671,-572 789.2805,-539.842 774.8595,-421.9903 784.0228,-380 795.4456,-327.6556 817.1169,-267.7974 827.5821,-240.2879"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="829.5686,-240.9727 829.755,-234.6185 825.6467,-239.4696 829.5686,-240.9727"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/API.js&#45;&gt;src/main/ElectronMock.js -->
+<g id="edge16" class="edge">
+<title>src/main/Platform/BiliBili/API.js-&gt;src/main/ElectronMock.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M733.212,-594.4075C743.2571,-599.3579 753.9949,-606.4276 760.7671,-616 792.3945,-660.7056 741.8038,-702.1226 784.0228,-737 822.0939,-768.4507 884.2059,-749.3353 918.4455,-734.81"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="919.4372,-736.6686 924.098,-732.3458 917.7587,-732.8185 919.4372,-736.6686"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/API.js&#45;&gt;src/main/KVTable.js -->
+<g id="edge17" class="edge">
+<title>src/main/Platform/BiliBili/API.js-&gt;src/main/KVTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M734.9949,-580.7296C743.5262,-578.7659 752.7907,-575.961 760.7671,-572 784.0622,-560.4318 806.6489,-540.2924 820.3215,-526.805"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="821.8562,-528.24 824.6047,-522.508 818.8816,-525.2749 821.8562,-528.24"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/API.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge18" class="edge">
+<title>src/main/Platform/BiliBili/API.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M734.852,-583.6735C744.0661,-581.9508 753.7879,-578.5464 760.7671,-572 785.9114,-548.4146 771.3545,-530.0628 784.0228,-498 796.7633,-465.7544 815.1799,-429.5371 825.5868,-409.7957"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="827.4654,-410.7355 828.4213,-404.4509 823.7549,-408.7677 827.4654,-410.7355"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Consts.js -->
+<g id="node18" class="node">
+<title>src/main/Platform/BiliBili/Consts.js</title>
+<g id="a_node18"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Consts.js" xlink:title="Consts.js">
+<path fill="#ffffcc" stroke="#000000" d="M854.3319,-594.3011C854.3319,-594.3011 812.7333,-594.3011 812.7333,-594.3011 809.633,-594.3011 806.5326,-591.2007 806.5326,-588.1004 806.5326,-588.1004 806.5326,-581.8996 806.5326,-581.8996 806.5326,-578.7993 809.633,-575.6989 812.7333,-575.6989 812.7333,-575.6989 854.3319,-575.6989 854.3319,-575.6989 857.4322,-575.6989 860.5326,-578.7993 860.5326,-581.8996 860.5326,-581.8996 860.5326,-588.1004 860.5326,-588.1004 860.5326,-591.2007 857.4322,-594.3011 854.3319,-594.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-582.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Consts.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/API.js&#45;&gt;src/main/Platform/BiliBili/Consts.js -->
+<g id="edge19" class="edge">
+<title>src/main/Platform/BiliBili/API.js-&gt;src/main/Platform/BiliBili/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M735.0563,-585C754.1737,-585 779.8356,-585 800.1701,-585"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="800.2966,-587.1001 806.2966,-585 800.2966,-582.9001 800.2966,-587.1001"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/AvaterCollectService/index.js -->
+<g id="node19" class="node">
+<title>src/main/Platform/BiliBili/Services/AvaterCollectService/index.js</title>
+<g id="a_node19"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/AvaterCollectService/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M457.3106,-636.3011C457.3106,-636.3011 415.712,-636.3011 415.712,-636.3011 412.6117,-636.3011 409.5113,-633.2007 409.5113,-630.1004 409.5113,-630.1004 409.5113,-623.8996 409.5113,-623.8996 409.5113,-620.7993 412.6117,-617.6989 415.712,-617.6989 415.712,-617.6989 457.3106,-617.6989 457.3106,-617.6989 460.4109,-617.6989 463.5113,-620.7993 463.5113,-623.8996 463.5113,-623.8996 463.5113,-630.1004 463.5113,-630.1004 463.5113,-633.2007 460.4109,-636.3011 457.3106,-636.3011"></path>
+<text text-anchor="middle" x="436.5113" y="-624.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/AvaterCollectService/index.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge22" class="edge">
+<title>src/main/Platform/BiliBili/Services/AvaterCollectService/index.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.5566,-624.9221C471.7725,-623.0834 480.2677,-619.7983 486.5113,-614 565.2966,-540.8333 477.8,-448.574 564.5113,-385 623.7971,-341.5335 833.3981,-340.319 895.2816,-380 926.0095,-399.7034 937.2269,-444.6923 941.1116,-468.5242"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="939.0623,-469.021 942.0229,-474.6464 943.2165,-468.4025 939.0623,-469.021"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/AvaterCollectService/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge23" class="edge">
+<title>src/main/Platform/BiliBili/Services/AvaterCollectService/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.7173,-624.7556C471.847,-622.9002 480.2512,-619.6474 486.5113,-614 560.1291,-547.5881 484.1286,-463.0409 564.5113,-405 597.3391,-381.2964 708.9699,-385.0987 777.6913,-390.0317"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="777.655,-392.1346 783.793,-390.4807 777.9633,-387.9459 777.655,-392.1346"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/AvaterCollectService/index.js&#45;&gt;src/main/Platform/BiliBili/API.js -->
+<g id="edge24" class="edge">
+<title>src/main/Platform/BiliBili/Services/AvaterCollectService/index.js-&gt;src/main/Platform/BiliBili/API.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.9555,-622.3584C489.8598,-618.0103 529.7974,-611.3916 564.5113,-606 602.194,-600.1473 645.5242,-593.8564 674.5745,-589.702"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="674.9068,-591.776 680.5497,-588.8489 674.313,-587.6182 674.9068,-591.776"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/Decoder.js -->
+<g id="node20" class="node">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/Decoder.js</title>
+<g id="a_node20"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/DanmakuService/Decoder.js" xlink:title="Decoder.js">
+<path fill="#ffffcc" stroke="#000000" d="M856.8357,-676.3011C856.8357,-676.3011 810.2295,-676.3011 810.2295,-676.3011 807.1292,-676.3011 804.0288,-673.2007 804.0288,-670.1004 804.0288,-670.1004 804.0288,-663.8996 804.0288,-663.8996 804.0288,-660.7993 807.1292,-657.6989 810.2295,-657.6989 810.2295,-657.6989 856.8357,-657.6989 856.8357,-657.6989 859.936,-657.6989 863.0364,-660.7993 863.0364,-663.8996 863.0364,-663.8996 863.0364,-670.1004 863.0364,-670.1004 863.0364,-673.2007 859.936,-676.3011 856.8357,-676.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-664.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Decoder.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/Encoder.js -->
+<g id="node21" class="node">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/Encoder.js</title>
+<g id="a_node21"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/DanmakuService/Encoder.js" xlink:title="Encoder.js">
+<path fill="#ffffcc" stroke="#000000" d="M856.3427,-645.3011C856.3427,-645.3011 810.7225,-645.3011 810.7225,-645.3011 807.6221,-645.3011 804.5218,-642.2007 804.5218,-639.1004 804.5218,-639.1004 804.5218,-632.8996 804.5218,-632.8996 804.5218,-629.7993 807.6221,-626.6989 810.7225,-626.6989 810.7225,-626.6989 856.3427,-626.6989 856.3427,-626.6989 859.4431,-626.6989 862.5434,-629.7993 862.5434,-632.8996 862.5434,-632.8996 862.5434,-639.1004 862.5434,-639.1004 862.5434,-642.2007 859.4431,-645.3011 856.3427,-645.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-633.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Encoder.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js -->
+<g id="node22" class="node">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js</title>
+<g id="a_node22"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js" xlink:title="RoomConnection.js">
+<path fill="#ffffcc" stroke="#000000" d="M748.5791,-707.3011C748.5791,-707.3011 666.955,-707.3011 666.955,-707.3011 663.8546,-707.3011 660.7543,-704.2007 660.7543,-701.1004 660.7543,-701.1004 660.7543,-694.8996 660.7543,-694.8996 660.7543,-691.7993 663.8546,-688.6989 666.955,-688.6989 666.955,-688.6989 748.5791,-688.6989 748.5791,-688.6989 751.6795,-688.6989 754.7798,-691.7993 754.7798,-694.8996 754.7798,-694.8996 754.7798,-701.1004 754.7798,-701.1004 754.7798,-704.2007 751.6795,-707.3011 748.5791,-707.3011"></path>
+<text text-anchor="middle" x="707.7671" y="-695.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">RoomConnection.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js&#45;&gt;events -->
+<g id="edge29" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js-&gt;events</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M726.9218,-707.3554C738.8911,-714.3084 753.388,-725.005 760.7671,-739 802.2953,-817.7613 729.5619,-1068.5589 784.0228,-1139 788.1684,-1144.362 794.1369,-1147.9553 800.5037,-1150.3562"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="800.0674,-1152.4211 806.4218,-1152.2423 801.3428,-1148.4194 800.0674,-1152.4211"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge25" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M727.0718,-707.3739C764.2076,-723.8951 846.2472,-752.8643 895.2816,-713 928.6887,-685.8404 939.5141,-546.583 942.2474,-499.5444"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="944.3448,-499.6476 942.5809,-493.5403 940.1513,-499.4146 944.3448,-499.6476"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js&#45;&gt;src/main/Platform/BiliBili/Services/DanmakuService/Decoder.js -->
+<g id="edge26" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js-&gt;src/main/Platform/BiliBili/Services/DanmakuService/Decoder.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M745.9823,-688.636C750.9565,-687.4143 755.9835,-686.1783 760.7671,-685 772.8186,-682.0314 785.9902,-678.7763 797.7745,-675.8603"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="798.4775,-677.8498 803.7972,-674.3697 797.4684,-673.7728 798.4775,-677.8498"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js&#45;&gt;src/main/Platform/BiliBili/Services/DanmakuService/Encoder.js -->
+<g id="edge27" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js-&gt;src/main/Platform/BiliBili/Services/DanmakuService/Encoder.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M754.5702,-688.6084C756.7307,-687.533 758.8105,-686.3349 760.7671,-685 775.5888,-674.8877 769.5749,-662.6395 784.0228,-652 788.4029,-648.7745 793.4619,-646.1811 798.638,-644.1009"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="799.3605,-646.0728 804.274,-642.0395 797.9177,-642.1284 799.3605,-646.0728"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js -->
+<g id="node23" class="node">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js</title>
+<g id="a_node23"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js" xlink:title="Warpper.js">
+<path fill="#ffffcc" stroke="#000000" d="M857.3319,-707.3011C857.3319,-707.3011 809.7333,-707.3011 809.7333,-707.3011 806.6329,-707.3011 803.5326,-704.2007 803.5326,-701.1004 803.5326,-701.1004 803.5326,-694.8996 803.5326,-694.8996 803.5326,-691.7993 806.6329,-688.6989 809.7333,-688.6989 809.7333,-688.6989 857.3319,-688.6989 857.3319,-688.6989 860.4323,-688.6989 863.5326,-691.7993 863.5326,-694.8996 863.5326,-694.8996 863.5326,-701.1004 863.5326,-701.1004 863.5326,-704.2007 860.4323,-707.3011 857.3319,-707.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-695.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Warpper.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js&#45;&gt;src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js -->
+<g id="edge28" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js-&gt;src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M754.9553,-698C768.9716,-698 784.0992,-698 797.303,-698"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="797.6171,-700.1001 803.617,-698 797.617,-695.9001 797.6171,-700.1001"></polygon>
+</g>
+<!-- zlib -->
+<g id="node24" class="node">
+<title>zlib</title>
+<path fill="#ffffcc" stroke="#c0c0c0" d="M854.3319,-1195.3011C854.3319,-1195.3011 812.7333,-1195.3011 812.7333,-1195.3011 809.633,-1195.3011 806.5326,-1192.2007 806.5326,-1189.1004 806.5326,-1189.1004 806.5326,-1182.8996 806.5326,-1182.8996 806.5326,-1179.7993 809.633,-1176.6989 812.7333,-1176.6989 812.7333,-1176.6989 854.3319,-1176.6989 854.3319,-1176.6989 857.4322,-1176.6989 860.5326,-1179.7993 860.5326,-1182.8996 860.5326,-1182.8996 860.5326,-1189.1004 860.5326,-1189.1004 860.5326,-1192.2007 857.4322,-1195.3011 854.3319,-1195.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-1183.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#c0c0c0">zlib</text>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js&#45;&gt;zlib -->
+<g id="edge30" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js-&gt;zlib</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M726.941,-707.3453C738.9185,-714.294 753.4171,-724.9897 760.7671,-739 805.3263,-823.9386 725.5131,-1093.9953 784.0228,-1170 788.1572,-1175.3706 794.1211,-1178.9675 800.4869,-1181.3691"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="800.0507,-1183.4341 806.4051,-1183.2551 801.3261,-1179.4324 800.0507,-1183.4341"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge31" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M863.4938,-696.6358C874.8233,-694.6307 886.9737,-690.4493 895.2816,-682 921.0499,-655.7928 936.4558,-541.5887 941.3372,-499.5801"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="943.4391,-499.6812 942.0302,-493.4824 939.266,-499.2069 943.4391,-499.6812"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/index.js -->
+<g id="node25" class="node">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/index.js</title>
+<g id="a_node25"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/DanmakuService/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M620.3106,-645.3011C620.3106,-645.3011 578.712,-645.3011 578.712,-645.3011 575.6117,-645.3011 572.5113,-642.2007 572.5113,-639.1004 572.5113,-639.1004 572.5113,-632.8996 572.5113,-632.8996 572.5113,-629.7993 575.6117,-626.6989 578.712,-626.6989 578.712,-626.6989 620.3106,-626.6989 620.3106,-626.6989 623.4109,-626.6989 626.5113,-629.7993 626.5113,-632.8996 626.5113,-632.8996 626.5113,-639.1004 626.5113,-639.1004 626.5113,-642.2007 623.4109,-645.3011 620.3106,-645.3011"></path>
+<text text-anchor="middle" x="599.5113" y="-633.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/index.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge32" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/index.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M621.7407,-626.689C623.4405,-625.5683 625.0576,-624.3398 626.5113,-623 648.4831,-602.7496 635.443,-581.261 660.5113,-565 748.5849,-507.8694 802.3134,-587.7625 895.2816,-539 912.5271,-529.9546 926.3043,-511.8887 934.5452,-498.9284"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="936.3877,-499.9409 937.7321,-493.7278 932.8065,-497.7464 936.3877,-499.9409"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge33" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M622.1812,-626.6879C623.7444,-625.5758 625.2121,-624.3491 626.5113,-623 652.7437,-595.7606 638.1155,-575.4721 660.5113,-545 704.9839,-484.4897 778.0282,-431.6091 813.2667,-408.0437"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="814.7468,-409.5821 818.5875,-404.5166 812.4262,-406.0814 814.7468,-409.5821"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/index.js&#45;&gt;src/main/Platform/BiliBili/API.js -->
+<g id="edge34" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/index.js-&gt;src/main/Platform/BiliBili/API.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M619.3671,-626.6458C636.9581,-618.3586 662.753,-606.2064 681.9434,-597.1657"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="683.1377,-598.9245 687.6705,-594.4676 681.3477,-595.125 683.1377,-598.9245"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/DanmakuService/index.js&#45;&gt;src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js -->
+<g id="edge35" class="edge">
+<title>src/main/Platform/BiliBili/Services/DanmakuService/index.js-&gt;src/main/Platform/BiliBili/Services/DanmakuService/RoomConnection.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M608.577,-645.3153C619.7969,-656.3294 639.9499,-674.4882 660.5113,-685 661.3163,-685.4115 662.1358,-685.8113 662.9674,-686.1996"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="662.2588,-688.1802 668.6019,-688.598 663.9038,-684.3158 662.2588,-688.1802"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/FollowerService/index.js -->
+<g id="node26" class="node">
+<title>src/main/Platform/BiliBili/Services/FollowerService/index.js</title>
+<g id="a_node26"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/FollowerService/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M457.3106,-697.3011C457.3106,-697.3011 415.712,-697.3011 415.712,-697.3011 412.6117,-697.3011 409.5113,-694.2007 409.5113,-691.1004 409.5113,-691.1004 409.5113,-684.8996 409.5113,-684.8996 409.5113,-681.7993 412.6117,-678.6989 415.712,-678.6989 415.712,-678.6989 457.3106,-678.6989 457.3106,-678.6989 460.4109,-678.6989 463.5113,-681.7993 463.5113,-684.8996 463.5113,-684.8996 463.5113,-691.1004 463.5113,-691.1004 463.5113,-694.2007 460.4109,-697.3011 457.3106,-697.3011"></path>
+<text text-anchor="middle" x="436.5113" y="-685.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/FollowerService/index.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge36" class="edge">
+<title>src/main/Platform/BiliBili/Services/FollowerService/index.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.6629,-680.291C471.7897,-676.9419 480.2059,-672.3018 486.5113,-666 547.316,-605.2298 492.8147,-536.4322 564.5113,-489 671.9376,-417.9301 836.736,-452.7499 908.0948,-472.9797"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="907.5412,-475.0055 913.8881,-474.6485 908.7039,-470.9696 907.5412,-475.0055"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/FollowerService/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge37" class="edge">
+<title>src/main/Platform/BiliBili/Services/FollowerService/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.5674,-680.9036C471.8816,-677.5659 480.4325,-672.7777 486.5113,-666 563.3752,-580.2978 474.7755,-491.1139 564.5113,-419 580.7316,-405.965 703.8031,-399.4677 777.7464,-396.7088"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="777.9435,-398.8031 783.8627,-396.485 777.7898,-394.6059 777.9435,-398.8031"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/FollowerService/index.js&#45;&gt;src/main/Platform/BiliBili/API.js -->
+<g id="edge38" class="edge">
+<title>src/main/Platform/BiliBili/Services/FollowerService/index.js-&gt;src/main/Platform/BiliBili/API.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M459.769,-678.658C468.3173,-674.9932 477.9866,-670.5719 486.5113,-666 522.7996,-646.5381 526.1623,-630.9986 564.5113,-616 590.5747,-605.8064 599.1313,-610.7919 626.5113,-605 642.3059,-601.6588 659.699,-597.4498 674.3267,-593.7559"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="675.1161,-595.7221 680.4137,-592.2084 674.0812,-591.6516 675.1161,-595.7221"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js -->
+<g id="node27" class="node">
+<title>src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js</title>
+<g id="a_node27"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js" xlink:title="HistoryTable.js">
+<path fill="#ffffcc" stroke="#000000" d="M739.5652,-782.3011C739.5652,-782.3011 675.9689,-782.3011 675.9689,-782.3011 672.8686,-782.3011 669.7682,-779.2007 669.7682,-776.1004 669.7682,-776.1004 669.7682,-769.8996 669.7682,-769.8996 669.7682,-766.7993 672.8686,-763.6989 675.9689,-763.6989 675.9689,-763.6989 739.5652,-763.6989 739.5652,-763.6989 742.6655,-763.6989 745.7659,-766.7993 745.7659,-769.8996 745.7659,-769.8996 745.7659,-776.1004 745.7659,-776.1004 745.7659,-779.2007 742.6655,-782.3011 739.5652,-782.3011"></path>
+<text text-anchor="middle" x="707.7671" y="-770.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">HistoryTable.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js&#45;&gt;src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js -->
+<g id="edge41" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js-&gt;src/main/Platform/BiliBili/Services/DanmakuService/Warpper.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M723.8048,-763.5481C734.7165,-756.7799 749.2151,-747.1085 760.7671,-737 772.4344,-726.7905 770.7968,-719.0892 784.0228,-711 788.1806,-708.457 792.8293,-706.4069 797.5676,-704.7553"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="798.4896,-706.6672 803.5873,-702.8693 797.2338,-702.6593 798.4896,-706.6672"></polygon>
+</g>
+<!-- src/main/SqlBricks.js -->
+<g id="node28" class="node">
+<title>src/main/SqlBricks.js</title>
+<g id="a_node28"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/SqlBricks.js" xlink:title="SqlBricks.js">
+<path fill="#ffffcc" stroke="#000000" d="M858.8297,-1008.3011C858.8297,-1008.3011 808.2355,-1008.3011 808.2355,-1008.3011 805.1352,-1008.3011 802.0348,-1005.2007 802.0348,-1002.1004 802.0348,-1002.1004 802.0348,-995.8996 802.0348,-995.8996 802.0348,-992.7993 805.1352,-989.6989 808.2355,-989.6989 808.2355,-989.6989 858.8297,-989.6989 858.8297,-989.6989 861.93,-989.6989 865.0304,-992.7993 865.0304,-995.8996 865.0304,-995.8996 865.0304,-1002.1004 865.0304,-1002.1004 865.0304,-1005.2007 861.93,-1008.3011 858.8297,-1008.3011"></path>
+<text text-anchor="middle" x="833.5326" y="-996.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">SqlBricks.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js&#45;&gt;src/main/SqlBricks.js -->
+<g id="edge39" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js-&gt;src/main/SqlBricks.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M725.9253,-782.315C737.7833,-789.3763 752.5419,-800.2133 760.7671,-814 793.308,-868.5438 753.3581,-899.3797 784.0228,-955 790.8933,-967.462 802.6906,-978.1574 813.046,-985.8821"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="811.8875,-987.6356 817.9858,-989.4304 814.3378,-984.2244 811.8875,-987.6356"></polygon>
+</g>
+<!-- src/main/Utilities/flatten.js -->
+<g id="node29" class="node">
+<title>src/main/Utilities/flatten.js</title>
+<g id="a_node29"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Utilities/flatten.js" xlink:title="flatten.js">
+<path fill="#ffffcc" stroke="#000000" d="M963.8324,-995.3011C963.8324,-995.3011 922.2338,-995.3011 922.2338,-995.3011 919.1335,-995.3011 916.0331,-992.2007 916.0331,-989.1004 916.0331,-989.1004 916.0331,-982.8996 916.0331,-982.8996 916.0331,-979.7993 919.1335,-976.6989 922.2338,-976.6989 922.2338,-976.6989 963.8324,-976.6989 963.8324,-976.6989 966.9327,-976.6989 970.0331,-979.7993 970.0331,-982.8996 970.0331,-982.8996 970.0331,-989.1004 970.0331,-989.1004 970.0331,-992.2007 966.9327,-995.3011 963.8324,-995.3011"></path>
+<text text-anchor="middle" x="943.0331" y="-983.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">flatten.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js&#45;&gt;src/main/Utilities/flatten.js -->
+<g id="edge40" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js-&gt;src/main/Utilities/flatten.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M726.4017,-782.3425C738.3098,-789.3519 752.9381,-800.1179 760.7671,-814 782.9633,-853.3579 750.2942,-985.9317 784.0228,-1016 820.9335,-1048.905 847.7653,-1029.6875 895.2816,-1016 906.8122,-1012.6785 918.2472,-1005.6611 927.0352,-999.248"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="928.6327,-1000.6719 932.1421,-995.3714 926.0932,-997.3265 928.6327,-1000.6719"></polygon>
+</g>
+<!-- src/main/SqlBricks.js&#45;&gt;src/main/Utilities/flatten.js -->
+<g id="edge78" class="edge">
+<title>src/main/SqlBricks.js-&gt;src/main/Utilities/flatten.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M864.911,-995.2747C878.8313,-993.6221 895.233,-991.6749 909.4048,-989.9924"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="910.0318,-992.0328 915.7423,-989.24 909.5366,-987.8621 910.0318,-992.0328"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/Query.js -->
+<g id="node30" class="node">
+<title>src/main/Platform/BiliBili/Services/HistoryService/Query.js</title>
+<g id="a_node30"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/HistoryService/Query.js" xlink:title="Query.js">
+<path fill="#ffffcc" stroke="#000000" d="M620.3106,-782.3011C620.3106,-782.3011 578.712,-782.3011 578.712,-782.3011 575.6117,-782.3011 572.5113,-779.2007 572.5113,-776.1004 572.5113,-776.1004 572.5113,-769.8996 572.5113,-769.8996 572.5113,-766.7993 575.6117,-763.6989 578.712,-763.6989 578.712,-763.6989 620.3106,-763.6989 620.3106,-763.6989 623.4109,-763.6989 626.5113,-766.7993 626.5113,-769.8996 626.5113,-769.8996 626.5113,-776.1004 626.5113,-776.1004 626.5113,-779.2007 623.4109,-782.3011 620.3106,-782.3011"></path>
+<text text-anchor="middle" x="599.5113" y="-770.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Query.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/Query.js&#45;&gt;src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js -->
+<g id="edge42" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/Query.js-&gt;src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M626.5495,-773C637.744,-773 651.0212,-773 663.5625,-773"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="663.6477,-775.1001 669.6477,-773 663.6477,-770.9001 663.6477,-775.1001"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/index.js -->
+<g id="node31" class="node">
+<title>src/main/Platform/BiliBili/Services/HistoryService/index.js</title>
+<g id="a_node31"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/HistoryService/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M457.3106,-768.3011C457.3106,-768.3011 415.712,-768.3011 415.712,-768.3011 412.6117,-768.3011 409.5113,-765.2007 409.5113,-762.1004 409.5113,-762.1004 409.5113,-755.8996 409.5113,-755.8996 409.5113,-752.7993 412.6117,-749.6989 415.712,-749.6989 415.712,-749.6989 457.3106,-749.6989 457.3106,-749.6989 460.4109,-749.6989 463.5113,-752.7993 463.5113,-755.8996 463.5113,-755.8996 463.5113,-762.1004 463.5113,-762.1004 463.5113,-765.2007 460.4109,-768.3011 457.3106,-768.3011"></path>
+<text text-anchor="middle" x="436.5113" y="-756.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/index.js&#45;&gt;src/main/Consts.js -->
+<g id="edge43" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/index.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M458.1522,-749.6683C468.118,-744.3597 479.3043,-736.7956 486.5113,-727 564.3376,-621.2206 508.261,-560.6681 564.5113,-442 596.0465,-375.472 603.2132,-353.2317 660.5113,-307 698.244,-276.5549 717.0804,-285.0271 760.7671,-264 778.0972,-255.6587 797.2521,-245.3465 811.5573,-237.4214"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="812.7609,-239.1549 816.982,-234.4018 810.7181,-235.4851 812.7609,-239.1549"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/index.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge44" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/index.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M457.3287,-749.6929C467.3388,-744.3101 478.8067,-736.6742 486.5113,-727 550.6182,-646.5044 482.378,-570.9948 564.5113,-509 617.2678,-469.179 820.0063,-476.4345 905.0938,-481.424"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="905.1415,-483.5305 911.2565,-481.7935 905.393,-479.3381 905.1415,-483.5305"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/index.js&#45;&gt;src/main/KVTable.js -->
+<g id="edge45" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/index.js-&gt;src/main/KVTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M457.1858,-749.5771C467.1595,-744.1647 478.6379,-736.5374 486.5113,-727 546.1985,-654.6982 490.9324,-589.1056 564.5113,-531 599.7433,-503.1771 733.208,-506.9426 797.9209,-510.5799"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="797.8516,-512.6794 803.9632,-510.9305 798.0949,-508.4864 797.8516,-512.6794"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge46" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M457.6907,-749.6454C467.6686,-744.2918 479.0007,-736.6955 486.5113,-727 554.6796,-639.0012 494.5431,-575.5746 564.5113,-489 595.5597,-450.5825 614.4969,-450.9604 660.5113,-433 698.2702,-418.2619 743.0097,-408.6271 777.5341,-402.7473"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="778.2849,-404.7512 783.8577,-401.6928 777.594,-400.6084 778.2849,-404.7512"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/index.js&#45;&gt;src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js -->
+<g id="edge47" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/index.js-&gt;src/main/Platform/BiliBili/Services/HistoryService/HistoryTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.6408,-757.2178C500.5724,-755.1654 568.6966,-752.7083 626.5113,-758 638.6763,-759.1134 651.7392,-761.1459 663.7564,-763.3627"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="663.6488,-765.4797 669.9351,-764.5349 664.4317,-761.3533 663.6488,-765.4797"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/HistoryService/index.js&#45;&gt;src/main/Platform/BiliBili/Services/HistoryService/Query.js -->
+<g id="edge48" class="edge">
+<title>src/main/Platform/BiliBili/Services/HistoryService/index.js-&gt;src/main/Platform/BiliBili/Services/HistoryService/Query.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.7938,-761.3433C491.9692,-763.7633 535.9664,-767.5422 566.1833,-770.1375"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="566.2537,-772.2512 572.4115,-770.6724 566.6132,-768.0666 566.2537,-772.2512"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/Room.js -->
+<g id="node32" class="node">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/Room.js</title>
+<g id="a_node32"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/StatisticsService/Room.js" xlink:title="Room.js">
+<path fill="#ffffcc" stroke="#000000" d="M620.3106,-843.3011C620.3106,-843.3011 578.712,-843.3011 578.712,-843.3011 575.6117,-843.3011 572.5113,-840.2007 572.5113,-837.1004 572.5113,-837.1004 572.5113,-830.8996 572.5113,-830.8996 572.5113,-827.7993 575.6117,-824.6989 578.712,-824.6989 578.712,-824.6989 620.3106,-824.6989 620.3106,-824.6989 623.4109,-824.6989 626.5113,-827.7993 626.5113,-830.8996 626.5113,-830.8996 626.5113,-837.1004 626.5113,-837.1004 626.5113,-840.2007 623.4109,-843.3011 620.3106,-843.3011"></path>
+<text text-anchor="middle" x="599.5113" y="-831.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">Room.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/Room.js&#45;&gt;src/main/Platform/BiliBili/API.js -->
+<g id="edge49" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/Room.js-&gt;src/main/Platform/BiliBili/API.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M614.8152,-824.6137C619.238,-821.1749 623.6408,-816.9056 626.5113,-812 671.1626,-735.6917 611.9865,-689.9056 660.5113,-616 665.4994,-608.4029 673.0642,-602.2451 680.6882,-597.4796"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="681.8278,-599.2459 685.9448,-594.4022 679.7059,-595.6213 681.8278,-599.2459"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/RoomLiveTable.js -->
+<g id="node33" class="node">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/RoomLiveTable.js</title>
+<g id="a_node33"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/StatisticsService/RoomLiveTable.js" xlink:title="RoomLiveTable.js">
+<path fill="#ffffcc" stroke="#000000" d="M745.5717,-843.3011C745.5717,-843.3011 669.9624,-843.3011 669.9624,-843.3011 666.862,-843.3011 663.7616,-840.2007 663.7616,-837.1004 663.7616,-837.1004 663.7616,-830.8996 663.7616,-830.8996 663.7616,-827.7993 666.862,-824.6989 669.9624,-824.6989 669.9624,-824.6989 745.5717,-824.6989 745.5717,-824.6989 748.6721,-824.6989 751.7725,-827.7993 751.7725,-830.8996 751.7725,-830.8996 751.7725,-837.1004 751.7725,-837.1004 751.7725,-840.2007 748.6721,-843.3011 745.5717,-843.3011"></path>
+<text text-anchor="middle" x="707.7671" y="-831.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">RoomLiveTable.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/Room.js&#45;&gt;src/main/Platform/BiliBili/Services/StatisticsService/RoomLiveTable.js -->
+<g id="edge50" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/Room.js-&gt;src/main/Platform/BiliBili/Services/StatisticsService/RoomLiveTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M626.5495,-834C635.8681,-834 646.63,-834 657.2092,-834"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="657.4047,-836.1001 663.4046,-834 657.4046,-831.9001 657.4047,-836.1001"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/StatisticsTable.js -->
+<g id="node34" class="node">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/StatisticsTable.js</title>
+<g id="a_node34"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/StatisticsService/StatisticsTable.js" xlink:title="StatisticsTable.js">
+<path fill="#ffffcc" stroke="#000000" d="M743.0732,-874.3011C743.0732,-874.3011 672.4609,-874.3011 672.4609,-874.3011 669.3605,-874.3011 666.2602,-871.2007 666.2602,-868.1004 666.2602,-868.1004 666.2602,-861.8996 666.2602,-861.8996 666.2602,-858.7993 669.3605,-855.6989 672.4609,-855.6989 672.4609,-855.6989 743.0732,-855.6989 743.0732,-855.6989 746.1736,-855.6989 749.2739,-858.7993 749.2739,-861.8996 749.2739,-861.8996 749.2739,-868.1004 749.2739,-868.1004 749.2739,-871.2007 746.1736,-874.3011 743.0732,-874.3011"></path>
+<text text-anchor="middle" x="707.7671" y="-862.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">StatisticsTable.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/Room.js&#45;&gt;src/main/Platform/BiliBili/Services/StatisticsService/StatisticsTable.js -->
+<g id="edge51" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/Room.js-&gt;src/main/Platform/BiliBili/Services/StatisticsService/StatisticsTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M626.5495,-841.7426C639.3723,-845.4145 654.9278,-849.869 668.9797,-853.8929"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="668.5513,-855.9546 674.8976,-855.5875 669.7076,-851.9168 668.5513,-855.9546"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js -->
+<g id="node35" class="node">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js</title>
+<g id="a_node35"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/StatisticsService/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M457.3106,-843.3011C457.3106,-843.3011 415.712,-843.3011 415.712,-843.3011 412.6117,-843.3011 409.5113,-840.2007 409.5113,-837.1004 409.5113,-837.1004 409.5113,-830.8996 409.5113,-830.8996 409.5113,-827.7993 412.6117,-824.6989 415.712,-824.6989 415.712,-824.6989 457.3106,-824.6989 457.3106,-824.6989 460.4109,-824.6989 463.5113,-827.7993 463.5113,-830.8996 463.5113,-830.8996 463.5113,-837.1004 463.5113,-837.1004 463.5113,-840.2007 460.4109,-843.3011 457.3106,-843.3011"></path>
+<text text-anchor="middle" x="436.5113" y="-831.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js&#45;&gt;src/main/Consts.js -->
+<g id="edge52" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.6624,-827.3118C472.0839,-823.9921 480.6757,-819.1113 486.5113,-812 588.1605,-688.1287 482.6682,-597.7619 564.5113,-460 594.0559,-410.2692 717.2433,-327.1014 760.7671,-289 780.5562,-271.6762 803.311,-251.6445 818.03,-238.6722"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="819.5855,-240.1005 822.6978,-234.5576 816.8081,-236.9498 819.5855,-240.1005"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge53" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.5422,-826.5335C471.7572,-823.1847 480.2555,-818.4836 486.5113,-812 551.6106,-744.53 508.5245,-691.2037 564.5113,-616 597.0077,-572.3495 609.5879,-559.1883 660.5113,-540 709.3954,-521.5801 847.1214,-548.2371 895.2816,-528 910.2861,-521.6951 923.5542,-508.5072 932.2722,-498.2051"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="934.0084,-499.399 936.1741,-493.4224 930.754,-496.744 934.0084,-499.399"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js&#45;&gt;src/main/KVTable.js -->
+<g id="edge54" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js-&gt;src/main/KVTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.6539,-826.9802C471.9738,-823.6477 480.5063,-818.8431 486.5113,-812 568.0528,-719.0777 471.2177,-626.1163 564.5113,-545 581.7814,-529.9841 728.2842,-519.3044 797.5373,-515.0467"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="797.7294,-517.139 803.591,-514.6788 797.4746,-512.9467 797.7294,-517.139"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge55" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.7226,-827.0401C472.0471,-823.7115 480.5649,-818.8942 486.5113,-812 572.2841,-712.5553 493.8054,-637.6657 564.5113,-527 594.5678,-479.9569 610.5682,-470.9425 660.5113,-446 701.4101,-425.5744 717.0452,-436.3535 760.7671,-423 775.9457,-418.3641 792.4846,-412.1012 805.9537,-406.6741"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="806.7595,-408.6134 811.5253,-404.4065 805.1763,-404.7233 806.7595,-408.6134"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js&#45;&gt;src/main/Platform/BiliBili/Services/StatisticsService/Room.js -->
+<g id="edge56" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js-&gt;src/main/Platform/BiliBili/Services/StatisticsService/Room.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.7938,-834C491.9692,-834 535.9664,-834 566.1833,-834"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="566.4115,-836.1001 572.4115,-834 566.4114,-831.9001 566.4115,-836.1001"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js&#45;&gt;src/main/Platform/BiliBili/Services/StatisticsService/RoomLiveTable.js -->
+<g id="edge57" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js-&gt;src/main/Platform/BiliBili/Services/StatisticsService/RoomLiveTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.5883,-839.0341C500.4605,-845.2277 568.5175,-854.3081 626.5113,-849 637.2388,-848.0181 648.6646,-846.3216 659.4558,-844.4142"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="659.8504,-846.477 665.3771,-843.336 659.098,-842.3449 659.8504,-846.477"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/StatisticsService/index.js&#45;&gt;src/main/Platform/BiliBili/Services/StatisticsService/StatisticsTable.js -->
+<g id="edge58" class="edge">
+<title>src/main/Platform/BiliBili/Services/StatisticsService/index.js-&gt;src/main/Platform/BiliBili/Services/StatisticsService/StatisticsTable.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M463.9101,-838.5842C489.7823,-842.7901 529.6982,-848.9623 564.5113,-853 596.203,-856.6757 631.9646,-859.6726 659.8294,-861.7522"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="659.8727,-863.861 666.011,-862.2082 660.1818,-859.6724 659.8727,-863.861"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/index.js -->
+<g id="node36" class="node">
+<title>src/main/Platform/BiliBili/Services/index.js</title>
+<g id="a_node36"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/Services/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M303.3106,-719.3011C303.3106,-719.3011 261.712,-719.3011 261.712,-719.3011 258.6117,-719.3011 255.5113,-716.2007 255.5113,-713.1004 255.5113,-713.1004 255.5113,-706.8996 255.5113,-706.8996 255.5113,-703.7993 258.6117,-700.6989 261.712,-700.6989 261.712,-700.6989 303.3106,-700.6989 303.3106,-700.6989 306.4109,-700.6989 309.5113,-703.7993 309.5113,-706.8996 309.5113,-706.8996 309.5113,-713.1004 309.5113,-713.1004 309.5113,-716.2007 306.4109,-719.3011 303.3106,-719.3011"></path>
+<text text-anchor="middle" x="282.5113" y="-707.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/Services/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge59" class="edge">
+<title>src/main/Platform/BiliBili/Services/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M304.2461,-700.6003C306.0917,-699.4881 307.8755,-698.2864 309.5113,-697 379.7644,-641.7555 483.7279,-424.2296 564.5113,-386 600.9523,-368.7548 710.4791,-378.8443 778.0188,-387.2556"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="777.8006,-389.3447 784.0162,-388.0118 778.3261,-385.1777 777.8006,-389.3447"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/index.js&#45;&gt;src/main/Platform/BiliBili/Services/AvaterCollectService/index.js -->
+<g id="edge60" class="edge">
+<title>src/main/Platform/BiliBili/Services/index.js-&gt;src/main/Platform/BiliBili/Services/AvaterCollectService/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M302.3329,-700.6106C304.7607,-699.4151 307.1995,-698.1925 309.5113,-697 346.9538,-677.6858 389.7128,-653.711 414.8383,-639.4219"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="416.0527,-641.147 420.2266,-636.3522 413.9737,-637.4976 416.0527,-641.147"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/index.js&#45;&gt;src/main/Platform/BiliBili/Services/DanmakuService/index.js -->
+<g id="edge61" class="edge">
+<title>src/main/Platform/BiliBili/Services/index.js-&gt;src/main/Platform/BiliBili/Services/DanmakuService/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M309.8228,-719.2297C349.8355,-731.2259 426.1807,-748.2723 486.5113,-727 530.0556,-711.6465 569.1771,-671.6241 587.8842,-650.1322"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="589.6768,-651.2672 591.9816,-645.3428 586.4854,-648.5369 589.6768,-651.2672"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/index.js&#45;&gt;src/main/Platform/BiliBili/Services/FollowerService/index.js -->
+<g id="edge62" class="edge">
+<title>src/main/Platform/BiliBili/Services/index.js-&gt;src/main/Platform/BiliBili/Services/FollowerService/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M309.6889,-706.1175C335.7789,-702.3903 375.2426,-696.7527 403.2094,-692.7574"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="403.7041,-694.8081 409.3468,-691.8806 403.1101,-690.6504 403.7041,-694.8081"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/index.js&#45;&gt;src/main/Platform/BiliBili/Services/HistoryService/index.js -->
+<g id="edge63" class="edge">
+<title>src/main/Platform/BiliBili/Services/index.js-&gt;src/main/Platform/BiliBili/Services/HistoryService/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M308.2355,-719.3908C329.3911,-726.9755 360.221,-737.7129 387.5113,-746 392.7063,-747.5775 398.2429,-749.1497 403.6547,-750.6274"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="403.1164,-752.6572 409.4561,-752.1896 404.2086,-748.6016 403.1164,-752.6572"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/Services/index.js&#45;&gt;src/main/Platform/BiliBili/Services/StatisticsService/index.js -->
+<g id="edge64" class="edge">
+<title>src/main/Platform/BiliBili/Services/index.js-&gt;src/main/Platform/BiliBili/Services/StatisticsService/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M304.2014,-719.4575C306.0564,-720.5575 307.8546,-721.7407 309.5113,-723 351.3844,-754.8286 345.2167,-780.7336 387.5113,-812 392.7357,-815.8621 398.7457,-819.2516 404.7268,-822.1396"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="403.8595,-824.052 410.1882,-824.65 405.6137,-820.2359 403.8595,-824.052"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/index.js -->
+<g id="node37" class="node">
+<title>src/main/Platform/BiliBili/index.js</title>
+<g id="a_node37"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/BiliBili/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M233.3106,-719.3011C233.3106,-719.3011 191.712,-719.3011 191.712,-719.3011 188.6117,-719.3011 185.5113,-716.2007 185.5113,-713.1004 185.5113,-713.1004 185.5113,-706.8996 185.5113,-706.8996 185.5113,-703.7993 188.6117,-700.6989 191.712,-700.6989 191.712,-700.6989 233.3106,-700.6989 233.3106,-700.6989 236.4109,-700.6989 239.5113,-703.7993 239.5113,-706.8996 239.5113,-706.8996 239.5113,-713.1004 239.5113,-713.1004 239.5113,-716.2007 236.4109,-719.3011 233.3106,-719.3011"></path>
+<text text-anchor="middle" x="212.5113" y="-707.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/BiliBili/index.js&#45;&gt;src/main/Consts.js -->
+<g id="edge65" class="edge">
+<title>src/main/Platform/BiliBili/index.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M213.2852,-719.369C216.7075,-759.6781 231.0434,-916.9349 247.5113,-931 257.2342,-939.3042 588.947,-941.8201 626.5113,-904 694.6842,-835.3628 627.0458,-560.7671 660.5113,-470 686.7366,-398.8703 717.1672,-394.0182 760.7671,-332 783.7757,-299.2716 809.9857,-260.298 823.8085,-239.6062"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="825.6226,-240.671 827.2063,-234.5145 822.129,-238.3397 825.6226,-240.671"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge66" class="edge">
+<title>src/main/Platform/BiliBili/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M213.2295,-719.5094C216.4707,-761.1774 230.327,-926.2232 247.5113,-941 375.2298,-1050.8249 502.0867,-1054.5432 626.5113,-941 687.6656,-885.1939 625.5068,-645.0257 660.5113,-570 687.2537,-512.6826 716.3148,-513.9938 760.7671,-469 781.4238,-448.0916 805.3005,-423.7827 819.9063,-408.8965"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="821.425,-410.3471 824.1276,-404.5933 818.4268,-407.4059 821.425,-410.3471"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/index.js&#45;&gt;src/main/Platform/BiliBili/API.js -->
+<g id="edge67" class="edge">
+<title>src/main/Platform/BiliBili/index.js-&gt;src/main/Platform/BiliBili/API.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M236.6506,-700.2901C237.7194,-699.2945 238.6867,-698.2008 239.5113,-697 251.8806,-678.988 231.6716,-614.0511 247.5113,-599 278.2346,-569.8063 573.8761,-579.3718 674.4591,-583.5156"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="674.4337,-585.6163 680.5161,-583.7683 674.6089,-581.4199 674.4337,-585.6163"></polygon>
+</g>
+<!-- src/main/Platform/BiliBili/index.js&#45;&gt;src/main/Platform/BiliBili/Services/index.js -->
+<g id="edge68" class="edge">
+<title>src/main/Platform/BiliBili/index.js-&gt;src/main/Platform/BiliBili/Services/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M239.7756,-710C242.7843,-710 245.8732,-710 248.9474,-710"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="249.2063,-712.1001 255.2063,-710 249.2063,-707.9001 249.2063,-712.1001"></polygon>
+</g>
+<!-- src/main/Platform/index.js -->
+<g id="node38" class="node">
+<title>src/main/Platform/index.js</title>
+<g id="a_node38"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/Platform/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M151.0549,-586.3011C151.0549,-586.3011 109.4564,-586.3011 109.4564,-586.3011 106.356,-586.3011 103.2557,-583.2007 103.2557,-580.1004 103.2557,-580.1004 103.2557,-573.8996 103.2557,-573.8996 103.2557,-570.7993 106.356,-567.6989 109.4564,-567.6989 109.4564,-567.6989 151.0549,-567.6989 151.0549,-567.6989 154.1553,-567.6989 157.2557,-570.7993 157.2557,-573.8996 157.2557,-573.8996 157.2557,-580.1004 157.2557,-580.1004 157.2557,-583.2007 154.1553,-586.3011 151.0549,-586.3011"></path>
+<text text-anchor="middle" x="130.2557" y="-574.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/Platform/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge69" class="edge">
+<title>src/main/Platform/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M157.3726,-570.9361C161.7201,-569.1724 165.9528,-566.9066 169.5113,-564 247.6849,-500.1475 181.5745,-367 282.5113,-367 282.5113,-367 282.5113,-367 599.5113,-367 671.248,-367 689.9716,-362.4172 760.7671,-374 774.1485,-376.1893 788.5569,-380.0225 800.9935,-383.82"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="800.5739,-385.8889 806.9272,-385.6739 801.8265,-381.88 800.5739,-385.8889"></polygon>
+</g>
+<!-- src/main/Platform/index.js&#45;&gt;src/main/Platform/BiliBili/index.js -->
+<g id="edge70" class="edge">
+<title>src/main/Platform/index.js-&gt;src/main/Platform/BiliBili/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M131.366,-586.5383C134.4658,-608.9257 145.2192,-665.3319 177.5113,-697 178.379,-697.851 179.3074,-698.647 180.2829,-699.3917"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="179.3002,-701.2553 185.4903,-702.7022 181.5535,-697.7109 179.3002,-701.2553"></polygon>
+</g>
+<!-- src/main/Services/WebsocketService/index.js&#45;&gt;http -->
+<g id="edge74" class="edge">
+<title>src/main/Services/WebsocketService/index.js-&gt;http</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M709.6145,-234.4167C717.3521,-274.267 747.3714,-433.054 760.7671,-565 766.2388,-618.8957 759.8065,-1003.5411 784.0228,-1052 789.8854,-1063.7316 800.7984,-1073.3322 810.8898,-1080.286"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="809.8922,-1082.1431 816.0609,-1083.6785 812.196,-1078.6314 809.8922,-1082.1431"></polygon>
+</g>
+<!-- src/main/Services/WebsocketService/index.js&#45;&gt;src/main/Consts.js -->
+<g id="edge71" class="edge">
+<title>src/main/Services/WebsocketService/index.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M735.0563,-225C754.1737,-225 779.8356,-225 800.1701,-225"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="800.2966,-227.1001 806.2966,-225 800.2966,-222.9001 800.2966,-227.1001"></polygon>
+</g>
+<!-- src/main/Services/WebsocketService/index.js&#45;&gt;src/main/EventBus.js -->
+<g id="edge72" class="edge">
+<title>src/main/Services/WebsocketService/index.js-&gt;src/main/EventBus.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M734.9813,-229.9592C743.4236,-231.9492 752.6403,-234.5957 760.7671,-238 825.5609,-265.1421 852.6859,-265.1381 895.2816,-321 930.1693,-366.7534 939.6153,-437.4537 942.135,-468.4924"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="940.0416,-468.6599 942.5742,-474.4905 944.2304,-468.3531 940.0416,-468.6599"></polygon>
+</g>
+<!-- src/main/Services/WebsocketService/index.js&#45;&gt;src/main/WebInterfaceBase.js -->
+<g id="edge73" class="edge">
+<title>src/main/Services/WebsocketService/index.js-&gt;src/main/WebInterfaceBase.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M734.9476,-226.9455C743.9583,-228.7447 753.5253,-232.0393 760.7671,-238 766.7393,-242.9157 810.2092,-341.5626 826.9683,-379.924"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="825.0943,-380.8803 829.4189,-385.5395 828.9437,-379.2004 825.0943,-380.8803"></polygon>
+</g>
+<!-- src/main/Services/WebsocketService/index.js&#45;&gt;url -->
+<g id="edge75" class="edge">
+<title>src/main/Services/WebsocketService/index.js-&gt;url</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M734.8326,-224.2974C744.2682,-222.6685 754.1419,-219.1647 760.7671,-212 804.1856,-165.046 742.3234,-118.4871 784.0228,-70 788.352,-64.9662 794.2764,-61.5039 800.5233,-59.1258"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="801.2639,-61.0932 806.3143,-57.2326 799.9587,-57.1011 801.2639,-61.0932"></polygon>
+</g>
+<!-- src/main/WebInterface.js -->
+<g id="node40" class="node">
+<title>src/main/WebInterface.js</title>
+<g id="a_node40"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/WebInterface.js" xlink:title="WebInterface.js">
+<path fill="#ffffcc" stroke="#000000" d="M163.0678,-136.3011C163.0678,-136.3011 97.4435,-136.3011 97.4435,-136.3011 94.3432,-136.3011 91.2428,-133.2007 91.2428,-130.1004 91.2428,-130.1004 91.2428,-123.8996 91.2428,-123.8996 91.2428,-120.7993 94.3432,-117.6989 97.4435,-117.6989 97.4435,-117.6989 163.0678,-117.6989 163.0678,-117.6989 166.1681,-117.6989 169.2685,-120.7993 169.2685,-123.8996 169.2685,-123.8996 169.2685,-130.1004 169.2685,-130.1004 169.2685,-133.2007 166.1681,-136.3011 163.0678,-136.3011"></path>
+<text text-anchor="middle" x="130.2557" y="-124.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">WebInterface.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/index.js -->
+<g id="node41" class="node">
+<title>src/main/index.js</title>
+<g id="a_node41"><a xlink:href="https://github.com/DanmakuTree/DanmakuTree/blob/master/src/main/index.js" xlink:title="index.js">
+<path fill="#ffffcc" stroke="#000000" d="M71.7993,-158.3011C71.7993,-158.3011 30.2007,-158.3011 30.2007,-158.3011 27.1004,-158.3011 24,-155.2007 24,-152.1004 24,-152.1004 24,-145.8996 24,-145.8996 24,-142.7993 27.1004,-139.6989 30.2007,-139.6989 30.2007,-139.6989 71.7993,-139.6989 71.7993,-139.6989 74.8996,-139.6989 78,-142.7993 78,-145.8996 78,-145.8996 78,-152.1004 78,-152.1004 78,-155.2007 74.8996,-158.3011 71.7993,-158.3011"></path>
+<text text-anchor="middle" x="51" y="-146.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#000000">index.js</text>
+</a>
+</g>
+</g>
+<!-- src/main/index.js&#45;&gt;fs -->
+<g id="edge85" class="edge">
+<title>src/main/index.js-&gt;fs</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" stroke-opacity="0.200000" d="M58.5732,-139.5377C66.1426,-130.4698 78.4344,-116.7583 91,-107 95.4408,-103.5514 100.4872,-100.303 105.4477,-97.4149"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="106.5604,-99.1986 110.764,-94.43 104.5041,-95.5364 106.5604,-99.1986"></polygon>
+</g>
+<!-- src/main/index.js&#45;&gt;package.json -->
+<g id="edge79" class="edge">
+<title>src/main/index.js-&gt;package.json</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M53.7599,-139.6801C58.8676,-123.751 71.1221,-90.9802 91,-70 133.866,-24.7568 150.186,0 212.5113,0 212.5113,0 212.5113,0 707.7671,0 776.4264,0 855.6261,-11.4902 902.3952,-19.4793"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="902.2248,-21.5809 908.4948,-20.5328 902.9398,-17.4421 902.2248,-21.5809"></polygon>
+</g>
+<!-- src/main/index.js&#45;&gt;src/main/Consts.js -->
+<g id="edge80" class="edge">
+<title>src/main/index.js-&gt;src/main/Consts.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M78.1095,-149.7475C82.4213,-149.8463 86.8325,-149.9355 91,-150 100.3014,-150.144 752.2864,-150.177 760.7671,-154 774.9009,-160.3715 773.1039,-168.9937 784.0228,-180 794.9898,-191.0548 808.048,-202.8721 817.9996,-211.6216"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="816.713,-213.2861 822.6126,-215.6536 819.477,-210.1238 816.713,-213.2861"></polygon>
+</g>
+<!-- src/main/index.js&#45;&gt;src/main/Main.js -->
+<g id="edge81" class="edge">
+<title>src/main/index.js-&gt;src/main/Main.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M68.022,-158.3535C74.9448,-161.7021 83.1517,-165.1126 91,-167 202.778,-193.8815 340.5798,-190.0667 402.9868,-186.4319"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="403.2836,-188.5178 409.1458,-186.0592 403.0299,-184.3255 403.2836,-188.5178"></polygon>
+</g>
+<!-- src/main/index.js&#45;&gt;src/main/ModuleManager.js -->
+<g id="edge82" class="edge">
+<title>src/main/index.js-&gt;src/main/ModuleManager.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M78.3843,-148.0827C178.396,-144.7326 524.9285,-133.1246 656.5275,-128.7164"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="656.7035,-130.8118 662.6298,-128.512 656.5629,-126.6141 656.7035,-130.8118"></polygon>
+</g>
+<!-- src/main/index.js&#45;&gt;src/main/Platform/index.js -->
+<g id="edge83" class="edge">
+<title>src/main/index.js-&gt;src/main/Platform/index.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M51.2983,-158.3933C53.2384,-217.0125 64.8134,-531.1863 91,-564 92.8612,-566.3322 95.1528,-568.2498 97.686,-569.826"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="96.8634,-571.7634 103.1644,-572.605 98.7635,-568.0178 96.8634,-571.7634"></polygon>
+</g>
+<!-- src/main/index.js&#45;&gt;src/main/WebInterface.js -->
+<g id="edge84" class="edge">
+<title>src/main/index.js-&gt;src/main/WebInterface.js</title>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M78.2753,-141.4288C82.2465,-140.3265 86.4015,-139.1732 90.5576,-138.0195"></path>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="91.4065,-139.9633 96.6262,-136.335 90.2831,-135.9164 91.4065,-139.9633"></polygon>
+</g>
+</g>
+</svg>
+        </titleindex></body></html>
